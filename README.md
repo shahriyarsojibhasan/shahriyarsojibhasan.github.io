@@ -1,55 +1,99 @@
-html
-<!-- Header Banner -->
-<p align="center">
-  <img src="[https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1&height=250&section=header&text=Shahriyar%20Sojib%20Hasan&fontSize=60&fontAlignY=35&fontColor=ffffff&animation=twinkling&desc=Full%20Stack%20Developer%20%7C%20Tech%20Enthusiast&descAlignY=55&descAlign=50](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1&height=250&section=header&text=Shahriyar%20Sojib%20Hasan&fontSize=60&fontAlignY=35&fontColor=ffffff&animation=twinkling&desc=Full%20Stack%20Developer%20%7C%20Tech%20Enthusiast&descAlignY=55&descAlign=50)" alt="Header Banner" width="100%" />
-</p>
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=500&color=58A6FF&center=true&vCenter=true&width=500&lines=Hi+👋🏾,+I'm+Shahriyar+Sojib+Hasan;Full‑Stack+Developer;Open+Source+Lover;Always+Learning+%3A)">
+</h1>
 
-<!-- Typing Animation & Profile Views -->
 <p align="center">
-  <a href="[https://github.com/shahriyarsojibhasan](https://github.com/shahriyarsojibhasan)">
-    <img src="[https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F0FF&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Shahriyar!+%F0%9F%91%8B;I+build+things+for+the+web+%F0%9F%8C%90;Always+Learning+%26+Coding+%F0%9F%9A%80;Let's+create+something+awesome!+%E2%9C%A8](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F0FF&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Shahriyar!+%F0%9F%91%8B;I+build+things+for+the+web+%F0%9F%8C%90;Always+Learning+%26+Coding+%F0%9F%9A%80;Let's+create+something+awesome!+%E2%9C%A8)" alt="Typing SVG" />
-  </a>
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">
+  <em>Code. Create. Contribute.</em>
 </p>
 
 <p align="center">
-  <img src="[https://komarev.com/ghpvc/?username=shahriyarsojibhasan&label=Profile%20Views&color=00F0FF&style=for-the-badge](https://komarev.com/ghpvc/?username=shahriyarsojibhasan&label=Profile%20Views&color=00F0FF&style=for-the-badge)" alt="Profile Views" />
+  <a href="https://github.com/shahriyarsojibhasan"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub"/></a>
+  <a href="https://instagram.com/shahriyarsojibhasan"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram"/></a>
+  <a href="https://twitter.com/shahriyarsojib"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter"/></a>
+  <a href="https://buymeacoffee.com/shahriyarsojib"><img src="https://img.icons8.com/fluency/48/000000/coffee-to-go.png" alt="Buy Me A Coffee"/></a>
 </p>
 
-<!-- Social Media Links -->
-<p align="center">
-  <a href="[https://github.com/shahriyarsojibhasan](https://github.com/shahriyarsojibhasan)"><img src="[https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)" alt="GitHub" /></a>
-  <a href="[https://linkedin.com/in/shahriyarsojibhasan](https://linkedin.com/in/shahriyarsojibhasan)"><img src="[https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)" alt="LinkedIn" /></a>
-  <a href="[https://twitter.com/shahriyarsojibhasan](https://twitter.com/shahriyarsojibhasan)"><img src="[https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)" alt="Twitter" /></a>
-  <a href="[https://instagram.com/shahriyarsojibhasan](https://instagram.com/shahriyarsojibhasan)"><img src="[https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)" alt="Instagram" /></a>
-  <a href="[https://facebook.com/shahriyarsojibhasan](https://facebook.com/shahriyarsojibhasan)"><img src="[https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)" alt="Facebook" /></a>
-</p>
-
-<br>
-
-<!-- Animated Rainbow Divider -->
-<p align="center">
-  <img src="[https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)" alt="divider" width="100%" />
-</p>
+---
 
 ## 👨‍💻 About Me
 
+<img align="right" width="300" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGZwaGR1M283cGZydWY4MGJ2YjVkeWprN2F0dHd1MndpaXc1dmFvaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding gif">
+
+- 🔭 I’m currently working on **awesome open source projects**  
+- 🌱 Exploring **Rust, Kubernetes, and Cloud Architecture**  
+- 💬 Ask me about **JavaScript, Python, and Dev Tooling**  
+- 😄 Pronouns: he/him  
+- ⚡ Fun fact: I breathe rhythm games and anime OSTs 🎮🎵  
+
+<br clear="right"/>
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,py,rust,kotlin,react,redux,bun,nodejs,express,redis,postgres,mongodb,docker,kubernetes,git,githubactions,vscode&perline=9" />
+</p>
+
+---
+
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=shahriyarsojibhasan&show_icons=true&theme=radical&rank_icon=github&hide_border=true" />
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shahriyarsojibhasan&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shahriyarsojibhasan&layout=compact&theme=radical&hide_border=true" />
+  <img width="49%" src="https://github-profile-trophy.vercel.app/?username=shahriyarsojibhasan&theme=radical&no-frame=true&row=2&column=4&margin-w=10" />
+</p>
+
+---
+
+## 🔥 Activity & Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shahriyarsojibhasan&theme=react-dark&bg_color=0d1117&hide_border=true&area=true" width="94%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</p>
+
+---
+
+## 🎧 Now Playing on Spotify
+
+<p align="center">
+  <a href="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&redirect=true">
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true" alt="Spotify Now Playing">
+  </a>
+</p>
+
+> 💡 *Replace `YOUR_SPOTIFY_ID` with your actual Spotify ID to show what you're listening to.*
+
+---
+
+## 🤝 Let’s Connect
+
+I’m always open to collaborating on exciting projects or just having a chat about tech, anime, or music. Hit me up!
+
+<p align="center">
+  <a href="https://github.com/shahriyarsojibhasan"><img src="https://img.icons8.com/bubbles/60/000000/github.png"/></a>
+  <a href="https://instagram.com/shahriyarsojibhasan"><img src="https://img.icons8.com/bubbles/60/000000/instagram.png"/></a>
+  <a href="https://twitter.com/shahriyarsojib"><img src="https://img.icons8.com/bubbles/60/000000/twitter.png"/></a>
+  <a href="https://buymeacoffee.com/shahriyarsojib"><img src="https://img.icons8.com/bubbles/60/000000/coffee.png"/></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shahriyarsojibhasan&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views" />
+</p>
+
+---
+
 <div align="center">
-  <img src="[https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)" align="right" width="280" alt="Coding GIF" style="border-radius: 10px;">
+  <img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" width="100%">
+  <sub><b>“Code is like poetry – it should be elegant, efficient, and expressive.”</b></sub>
 </div>
-
-Welcome to my creative space! I am a passionate developer who loves writing clean code and building user-friendly applications. Technology is not just my career; it's my hobby and my playground.
-
-When I step away from the keyboard, you'll probably find me listening to music, exploring new tech trends, or enjoying a good cup of coffee.
-
-<br>
-
-```javascript
-const Shahriyar = {
-  role: "Software Developer",
-  location: "Bangladesh 🇧🇩",
-  code: ["JavaScript", "TypeScript", "Python", "HTML/CSS"],
-  technologies: ["React", "Node.js", "Express", "TailwindCSS"],
-  architecture: ["Microservices", "RESTful APIs", "Serverless"],
-  hobbies: ["Coding", "Music", "Reading Docs", "Gaming"],
-  coffeeIntake: "High ☕"
-};
