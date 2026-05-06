@@ -1,32 +1,27 @@
-<!-- =========================
-🌸 Cherry Blossom Lab README
-========================= -->
+<!-- =========================================
+🌸 Ultimate Developer Profile README
+Made for: Shahriyar Sojib Hasan
+========================================= -->
 
 <div align="center">
 
-# 🌸 Shahriyar Sojib Hasan
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F75C7E&center=true&vCenter=true&width=700&lines=Full-Stack+Developer;Open+Source+Enthusiast;Cloud+Native+Explorer;Rust+%7C+Docker+%7C+Kubernetes;🌸+Cherry+Blossom+Hacking+Lab+🌸" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&text=Shahriyar%20Sojib%20Hasan&fontAlign=50&fontAlignY=40&color=0:0d1117,50:F75C7E,100:7F00FF&fontColor=ffffff&fontSize=48&desc=Full-Stack%20Developer%20•%20Open%20Source%20Enthusiast%20•%20Cloud%20Native&descAlignY=60&animation=fadeIn"/>
 
 <br/>
 
-<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1000&color=F75C7E&center=true&vCenter=true&width=850&lines=Full-Stack+Developer;Rust+%7C+Docker+%7C+Kubernetes;Building+Scalable+Systems;Open+Source+Contributor;Cherry+Blossom+Terminal+Lifestyle;Always+Learning+Something+New"/>
 
-### Code clean. Ship fast. Stay curious.
-
-<br/>
+<br/><br/>
 
 <a href="https://github.com/shahriyarsojibhasan">
-  <img src="https://skillicons.dev/icons?i=github" height="45"/>
+  <img src="https://img.shields.io/github/followers/shahriyarsojibhasan?style=for-the-badge&logo=github&color=F75C7E&labelColor=0d1117"/>
 </a>
 
-<a href="https://instagram.com/shahriyarsojibhasan">
-  <img src="https://skillicons.dev/icons?i=instagram" height="45"/>
+<a href="https://github.com/shahriyarsojibhasan">
+  <img src="https://img.shields.io/github/stars/shahriyarsojibhasan?style=for-the-badge&logo=github&color=7F00FF&labelColor=0d1117"/>
 </a>
 
-<a href="https://buymeacoffee.com/shahriyarsojibhasan">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45"/>
-</a>
+<img src="https://komarev.com/ghpvc/?username=shahriyarsojibhasan&style=for-the-badge&color=F75C7E"/>
 
 </div>
 
@@ -34,77 +29,66 @@
 
 # 🌸 About Me
 
-<img align="right" alt="Coding" width="320" src="https://media.tenor.com/qJ5evVs-_uUAAAAC/coding.gif"/>
+<img align="right" width="320" src="https://media.tenor.com/2uyENRmiUt0AAAAC/coding.gif"/>
 
 ```yaml
 name: Shahriyar Sojib Hasan
-location: Bangladesh
+role: Full-Stack Developer
 
-current_focus:
+currently_learning:
   - Rust
-  - Cloud Native
-  - DevEx
-  - Backend Architecture
-
-learning:
   - WebAssembly
   - eBPF
   - Distributed Systems
 
+working_on:
+  - Developer Tools
+  - Cloud Native Apps
+  - Backend Systems
+
 goal_2026:
   Contribute to 50+ Open Source Projects
 
-fun:
-  - osu!
-  - Arcaea
-  - Terminal customization
-  - Late night coding
+lifestyle:
+  - Linux
+  - Terminal
+  - Night Coding
+  - Coffee Driven
 
-motto:
-  "Build things that matter."
+philosophy:
+  "Build beautiful things with clean code."
 ```
 
-- 🔭 Building scalable backend systems
-- 🌱 Exploring low-level performance tooling
-- 💬 Ask me about JavaScript, Python, Docker, Linux
-- ⚡ I enjoy clean terminal setups & automation
-- 🌸 Cherry blossom aesthetic + terminal glow lover
+### ⚡ Quick Info
+
+- 🔭 Building scalable backend systems  
+- 🌱 Learning low-level systems engineering  
+- 🐳 Docker & Kubernetes enthusiast  
+- ⚙️ Automation lover  
+- 💬 Ask me about JavaScript, Python, Linux  
+- 🌸 Cherry blossom + cyberpunk aesthetics  
 
 <br clear="right"/>
 
 ---
 
-# 🛸 Tech Stack
+# 🛸 Tech Arsenal
 
 <div align="center">
 
-## Languages
-
 <img src="https://skillicons.dev/icons?i=js,ts,python,rust,kotlin,go,c,cpp,bash" />
 
----
+<br/><br/>
 
-## Frontend
+<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,vite,nodejs,express,bun" />
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,vite" />
+<br/><br/>
 
----
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,firebase,docker,kubernetes,linux,nginx" />
 
-## Backend & Database
+<br/><br/>
 
-<img src="https://skillicons.dev/icons?i=nodejs,express,bun,redis,postgres,mongodb,firebase" />
-
----
-
-## DevOps & Cloud
-
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,nginx,githubactions,git" />
-
----
-
-## Tools
-
-<img src="https://skillicons.dev/icons?i=vscode,neovim,postman,figma,stackoverflow" />
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,neovim,figma,postman" />
 
 </div>
 
@@ -114,15 +98,25 @@ motto:
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=shahriyarsojibhasan&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=F75C7E&icon_color=F75C7E" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=shahriyarsojibhasan&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=F75C7E&icon_color=F75C7E"/>
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shahriyarsojibhasan&theme=radical&hide_border=true&background=0d1117&stroke=F75C7E&ring=F75C7E&fire=F75C7E&currStreakLabel=F75C7E" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shahriyarsojibhasan&theme=radical&hide_border=true&background=0d1117&stroke=F75C7E&ring=F75C7E&fire=F75C7E"/>
 
-<br/>
+<br/><br/>
 
-<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shahriyarsojibhasan&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=F75C7E" />
+<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shahriyarsojibhasan&layout=compact&theme=radical&hide_border=true&bg_color=0d1117"/>
 
-<img width="56%" src="https://github-profile-trophy.vercel.app/?username=shahriyarsojibhasan&theme=radical&no-frame=true&row=2&column=4" />
+<img width="55%" src="https://github-profile-trophy.vercel.app/?username=shahriyarsojibhasan&theme=radical&no-frame=true&row=2&column=4"/>
+
+</div>
+
+---
+
+# 📈 Contribution Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shahriyarsojibhasan&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=F75C7E&line=F75C7E&point=FFFFFF"/>
 
 </div>
 
@@ -132,41 +126,52 @@ motto:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
 
 ---
 
-# 🎧 Spotify Activity
+# 🎧 Spotify Playing
 
 <div align="center">
 
 <a href="https://open.spotify.com/user/31xazhs2tw7f5y7rdfz7zrwlzzji">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31xazhs2tw7f5y7rdfz7zrwlzzji&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=true&bar_color=F75C7E&bar_color_cover=true"/>
+<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31xazhs2tw7f5y7rdfz7zrwlzzji&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&interchange=false&bar_color=F75C7E&bar_color_cover=true"/>
 </a>
 
 </div>
 
 ---
 
-# 🌸 Current Workflow
+# 🌌 Developer Mindset
 
 <div align="center">
 
 ```text
-Wake up
-   ↓
-Coffee ☕
-   ↓
-Code 💻
-   ↓
-Break things 🔥
-   ↓
-Fix everything ⚡
-   ↓
-Push to GitHub 🚀
+while(alive) {
+    eat();
+    sleep();
+    code();
+    repeat();
+}
 ```
+
+</div>
+
+---
+
+# 🚀 Current Workflow
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=F75C7E"/>
+
+<img src="https://img.shields.io/badge/Test-0d1117?style=for-the-badge&logo=jest&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Deploy-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED"/>
+
+<img src="https://img.shields.io/badge/Scale-0d1117?style=for-the-badge&logo=kubernetes&logoColor=326CE5"/>
 
 </div>
 
@@ -177,16 +182,41 @@ Push to GitHub 🚀
 <div align="center">
 
 <a href="https://github.com/shahriyarsojibhasan">
-  <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://instagram.com/shahriyarsojibhasan">
-  <img src="https://img.shields.io/badge/Instagram-F75C7E?style=for-the-badge&logo=instagram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Instagram-F75C7E?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
 <a href="https://buymeacoffee.com/shahriyarsojibhasan">
-  <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/>
+<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/>
 </a>
+
+</div>
+
+---
+
+# 🌸 Fun Terminal Zone
+
+<div align="center">
+
+```bash
+> sudo pacman -S coffee
+
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) coffee-forever
+
+Total Installed Size: ∞ MB
+
+:: Proceed with installation? [Y/n] y
+
+☕ Coffee installed successfully.
+⚡ Energy level increased.
+🚀 Productivity boosted.
+```
 
 </div>
 
@@ -194,11 +224,7 @@ Push to GitHub 🚀
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=shahriyarsojibhasan&label=Profile+Views&color=F75C7E&style=flat" />
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:0d1117,50:F75C7E,100:7F00FF"/>
 
 ### 🌸 rm -rf sadness && git commit -m "keep moving forward"
 
