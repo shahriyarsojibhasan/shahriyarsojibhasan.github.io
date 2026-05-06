@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Shahriyar Sojib Hasan | Full Stack Developer</title>
+
+  <!-- SEO -->
+  <meta name="title" content="Shahriyar Sojib Hasan | Full Stack Developer">
+  <meta name="description" content="Official portfolio of Shahriyar Sojib Hasan. Full-stack developer, hacker, Linux enthusiast, cyberpunk UI designer, and open-source enthusiast.">
+  <meta name="keywords" content="Shahriyar, Shahriyar Sojib Hasan, শাহরিয়ার সজিব হাসান, Full Stack Developer, Hacker, Linux Enthusiast, Cyberpunk UI Designer">
+  <meta name="author" content="Shahriyar Sojib Hasan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shahriyar Sojib Hasan">
+  <meta property="og:description" content="Cyberpunk portfolio of Shahriyar Sojib Hasan">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/9919?v=4">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shahriyar Sojib Hasan">
+  <meta name="twitter:description" content="Full-stack developer and futuristic UI designer">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Space Grotesk',sans-serif;
+      background:#0d1117;
+      color:white;
+      overflow-x:hidden;
+      background-image:
+      radial-gradient(circle at top right,#7f5af033,transparent 25%),
+      radial-gradient(circle at bottom left,#f75c7e22,transparent 25%);
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:90%;
+      max-width:1300px;
+      margin:auto;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:999;
+      backdrop-filter:blur(20px);
+      background:#0d1117d9;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:22px 0;
+    }
+
+    .logo{
+      font-size:30px;
+      font-weight:700;
+      color:#F75C7E;
+      letter-spacing:3px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:35px;
+      color:#c9d1d9;
+    }
+
+    .nav-links a:hover{
+      color:#F75C7E;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      align-items:center;
+      gap:70px;
+      padding:120px 0;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 22px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(247,92,126,.3);
+      margin-bottom:30px;
+      color:#c9d1d9;
+    }
+
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#F75C7E;
+      animation:pulse 1.5s infinite;
+    }
+
+    @keyframes pulse{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.5);opacity:.5}
+      100%{transform:scale(1)}
+    }
+
+    .hero h1{
+      font-size:clamp(3rem,8vw,6rem);
+      line-height:1.05;
+      font-weight:700;
+    }
+
+    .hero h1 span{
+      color:#F75C7E;
+    }
+
+    .hero p{
+      margin-top:30px;
+      color:#9ca3af;
+      line-height:1.9;
+      font-size:18px;
+      max-width:650px;
+    }
+
+    .buttons{
+      margin-top:40px;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border-radius:18px;
+      transition:.3s;
+      font-weight:600;
+    }
+
+    .primary{
+      background:#F75C7E;
+      color:black;
+    }
+
+    .secondary{
+      border:1px solid rgba(255,255,255,0.1);
+      background:rgba(255,255,255,0.04);
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+    }
+
+    .terminal{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:30px;
+      padding:35px;
+      backdrop-filter:blur(20px);
+      box-shadow:0 0 50px rgba(127,90,240,.15);
+    }
+
+    .terminal-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:25px;
+    }
+
+    .lights{
+      display:flex;
+      gap:10px;
+    }
+
+    .lights div{
+      width:12px;
+      height:12px;
+      border-radius:50%;
+    }
+
+    .red{background:#ff5f56}
+    .yellow{background:#ffbd2e}
+    .green{background:#27c93f}
+
+    pre{
+      overflow:auto;
+      color:#c9d1d9;
+      line-height:2;
+    }
+
+    section{
+      padding:120px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title p{
+      color:#F75C7E;
+      font-weight:600;
+      letter-spacing:2px;
+    }
+
+    .section-title h2{
+      font-size:clamp(2.5rem,5vw,4rem);
+      margin-top:15px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:28px;
+      padding:35px;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#F75C7E;
+    }
+
+    .card h3{
+      color:#F75C7E;
+      margin-bottom:20px;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#9ca3af;
+      line-height:1.8;
+    }
+
+    .stack-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:20px;
+    }
+
+    .tech{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:24px;
+      text-align:center;
+      transition:.3s;
+      font-weight:600;
+    }
+
+    .tech:hover{
+      border-color:#F75C7E;
+      transform:translateY(-8px);
+      color:#F75C7E;
+    }
+
+    .quote{
+      background:linear-gradient(to right,rgba(127,90,240,.2),rgba(247,92,126,.2));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:40px;
+      padding:80px 40px;
+      text-align:center;
+    }
+
+    .quote h2{
+      font-size:clamp(2rem,5vw,4rem);
+      line-height:1.3;
+    }
+
+    .quote p{
+      margin-top:25px;
+      color:#9ca3af;
+      line-height:1.9;
+      max-width:800px;
+      margin-inline:auto;
+    }
+
+    footer{
+      border-top:1px solid rgba(255,255,255,0.08);
+      padding:70px 0;
+      text-align:center;
+    }
+
+    .socials{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:18px;
+      margin-top:35px;
+    }
+
+    .social{
+      padding:14px 24px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      transition:.3s;
+    }
+
+    .social:hover{
+      background:#F75C7E;
+      color:black;
+      transform:translateY(-5px);
+    }
+
+    .footer-text{
+      margin-top:40px;
+      color:#6b7280;
+    }
+
+    @media(max-width:768px){
+
+      .nav-links{
+        display:none;
+      }
+
+      .hero{
+        text-align:center;
+      }
+
+      .buttons{
+        justify-content:center;
+      }
+
+      .hero p{
+        margin-inline:auto;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">SHAHRIYAR</div>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#workspace">Workspace</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div>
+
+        <div class="tag">
+          <div class="dot"></div>
+          Available for creative projects
+        </div>
+
+        <h1>
+          Building <span>Future</span><br>
+          Through Code.
+        </h1>
+
+        <p>
+          Shahriyar Sojib Hasan — Full-stack developer, hacker, Linux enthusiast, cyberpunk UI designer, and open-source explorer passionate about building futuristic digital experiences.
+        </p>
+
+        <div class="buttons">
+          <a href="https://github.com/shahriyarsojibhasan" class="btn primary">GitHub</a>
+
+          <a href="https://x.com/shahriyarsojib_" class="btn secondary">Connect</a>
+        </div>
+
+      </div>
+
+      <div class="terminal">
+
+        <div class="terminal-top">
+
+          <div class="lights">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+          </div>
+
+          <span>terminal.sh</span>
+
+        </div>
+
+<pre>
+┌──(shahriyar㉿cyberdeck)-[~/workspace]
+└─$ whoami
+
+> Full-Stack Developer
+> Linux Power User
+> Cyberpunk UI Designer
+> Open Source Enthusiast
+
+┌──(shahriyar㉿cyberdeck)-[~/workspace]
+└─$ sudo deploy future
+
+████████████████████ 100%
+Deployment successful 🚀
+</pre>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+      <div class="section-title">
+        <p>ABOUT ME</p>
+        <h2>Cyberpunk Mindset</h2>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Identity</h3>
+
+          <p>
+            Full-stack developer, hacker, Linux enthusiast, terminal customization lover, and futuristic interface designer.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Workspace</h3>
+
+          <p>
+            Windows 10, Kali Linux, Android Studio, VS Code, Bash, ZSH, and Windows Terminal.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Lifestyle</h3>
+
+          <p>
+            Coffee ☕ • Music 🎧 • Night coding 🌙 • Cyberpunk aesthetics 🌌
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Dream</h3>
+
+          <p>
+            Dreaming to travel the world while coding and building futuristic products 🌍
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TECH STACK -->
+
+    <section id="stack">
+
+      <div class="section-title">
+        <p>TECH STACK</p>
+        <h2>Technologies I Use</h2>
+      </div>
+
+      <div class="stack-grid">
+
+        <div class="tech">JavaScript</div>
+        <div class="tech">TypeScript</div>
+        <div class="tech">Python</div>
+        <div class="tech">Rust</div>
+        <div class="tech">React</div>
+        <div class="tech">Next.js</div>
+        <div class="tech">Node.js</div>
+        <div class="tech">Docker</div>
+        <div class="tech">Kubernetes</div>
+        <div class="tech">MongoDB</div>
+        <div class="tech">PostgreSQL</div>
+        <div class="tech">Redis</div>
+        <div class="tech">Linux</div>
+        <div class="tech">GitHub Actions</div>
+        <div class="tech">Android Studio</div>
+
+      </div>
+
+    </section>
+
+    <!-- WORKSPACE -->
+
+    <section id="workspace">
+
+      <div class="section-title">
+        <p>DIGITAL WORKSPACE</p>
+        <h2>My Setup</h2>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Operating System</h3>
+          <p>
+            Windows 10<br>
+            Kali Linux<br>
+            WSL2
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Editors</h3>
+          <p>
+            VS Code<br>
+            Android Studio<br>
+            Neovim
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Terminal</h3>
+          <p>
+            Windows Terminal<br>
+            Bash<br>
+            ZSH<br>
+            PowerShell
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Environment</h3>
+          <p>
+            Coffee ☕<br>
+            Music 🎧<br>
+            Cyberpunk UI 🌌
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- QUOTE -->
+
+    <section>
+
+      <div class="quote">
+
+        <h2>
+          Design systems that feel alive.
+        </h2>
+
+        <p>
+          I believe technology should not only function perfectly but also create unforgettable emotional experiences through futuristic interfaces and clean architecture.
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <div class="container">
+
+      <h2 style="font-size:40px;color:#F75C7E;">
+        Shahriyar Sojib Hasan
+      </h2>
+
+      <p style="margin-top:20px;color:#9ca3af;">
+        শাহরিয়ার সজিব হাসান • Full Stack Developer • Cyberpunk Builder
+      </p>
+
+      <div class="socials">
+
+        <a class="social" href="https://github.com/shahriyarsojibhasan">
+          GitHub
+        </a>
+
+        <a class="social" href="https://x.com/shahriyarsojib_">
+          X
+        </a>
+
+        <a class="social" href="https://instagram.com/shahriyarsojibhasan">
+          Instagram
+        </a>
+
+        <a class="social" href="https://facebook.com/shahriyarsojibhasan">
+          Facebook
+        </a>
+
+        <a class="social" href="https://linkedin.com/in/shahriyarsojibhasan">
+          LinkedIn
+        </a>
+
+        <a class="social" href="https://youtube.com/@shahriyarsojibhasan">
+          YouTube
+        </a>
+
+        <a class="social" href="https://buymeacoffee.com/shahriyarsojibhasan">
+          BuyMeACoffee
+        </a>
+
+      </div>
+
+      <div class="footer-text">
+        © 2026 Shahriyar Sojib Hasan • Dreaming beyond borders 🌍
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SEO JSON -->
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Shahriyar Sojib Hasan",
+    "alternateName":[
+      "Shahriyar",
+      "শাহরিয়ার সজিব হাসান"
+    ],
+    "url":"https://shahriyarsojibhasan.github.io",
+    "sameAs":[
+      "https://github.com/shahriyarsojibhasan",
+      "https://x.com/shahriyarsojib_",
+      "https://instagram.com/shahriyarsojibhasan",
+      "https://facebook.com/shahriyarsojibhasan",
+      "https://linkedin.com/in/shahriyarsojibhasan",
+      "https://youtube.com/@shahriyarsojibhasan"
+    ],
+    "jobTitle":"Full Stack Developer"
+  }
+  </script>
+
+</body>
+</html>
