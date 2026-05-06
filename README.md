@@ -20,7 +20,7 @@
 
 <img align="right" width="280" src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/1a7e72feb81e03bc1260ba7ca1cdd9e5.gif" alt="Hacker gif">
 
-```yaml
+yaml
 # This is YAML – it looks cool but does nothing except display nicely 😎
 current_focus:
   - Rust
@@ -51,4 +51,4 @@ I love pairing cherry blossoms with servers and terminals.
 Reach out if you want to build something weird & wonderful 🤝
 
 <p align="center"> <a href="https://github.com/shahriyarsojibhasan"><img src="https://img.icons8.com/bubbles/60/000000/github.png"/></a> <a href="https://instagram.com/shahriyarsojibhasan"><img src="https://img.icons8.com/bubbles/60/000000/instagram.png"/></a> <a href="https://buymeacoffee.com/shahriyarsojibhasan"><img src="https://img.icons8.com/bubbles/60/000000/coffee.png"/></a> </p><p align="center"> <img src="https://komarev.com/ghpvc/?username=shahriyarsojibhasan&label=🌸%20Visitors&color=F75C7E&style=flat" alt="Profile views" /> </p>
-<div align="center"> <img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" width="100%"> <sub><b>🌸 rm -rf winter/ && touch cherry_blossom.md 🌸</b></sub> </div> ```
+<div align="center"> <img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" width="100%"> <sub><b>🌸 rm -rf winter/ && touch cherry_blossom.md 🌸</b></sub> </div>
