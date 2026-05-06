@@ -1,674 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahriyar Sojib Hasan | Cyberpunk Portfolio</title>
+    <meta name="description" content="Futuristic full-stack developer, hacker, and cyberpunk UI architect.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <title>Shahriyar Sojib Hasan | Full Stack Developer</title>
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for in-browser JSX compiling -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- SEO -->
-  <meta name="title" content="Shahriyar Sojib Hasan | Full Stack Developer">
-  <meta name="description" content="Official portfolio of Shahriyar Sojib Hasan. Full-stack developer, hacker, Linux enthusiast, cyberpunk UI designer, and open-source enthusiast.">
-  <meta name="keywords" content="Shahriyar, Shahriyar Sojib Hasan, শাহরিয়ার সজিব হাসান, Full Stack Developer, Hacker, Linux Enthusiast, Cyberpunk UI Designer">
-  <meta name="author" content="Shahriyar Sojib Hasan">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0d1117">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0d1117',
+                        neonPink: '#F75C7E',
+                        neonPurple: '#7F5AF0',
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        space: ['Space Grotesk', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 10px #F75C7E, inset 0 0 10px #F75C7E',
+                        'neon-purple': '0 0 10px #7F5AF0, inset 0 0 10px #7F5AF0',
+                        'neon-pink-hover': '0 0 20px #F75C7E, inset 0 0 15px #F75C7E',
+                        'glass': '0 8px 32px 0 rgba(127, 90, 240, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Shahriyar Sojib Hasan">
-  <meta property="og:description" content="Cyberpunk portfolio of Shahriyar Sojib Hasan">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/9919?v=4">
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            margin: 0;
+            overflow-x: hidden;
+        }
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Shahriyar Sojib Hasan">
-  <meta name="twitter:description" content="Full-stack developer and futuristic UI designer">
+        /* Cyberpunk Scanline Effect */
+        .scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.3;
+        }
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(13, 17, 23, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(127, 90, 240, 0.3);
+            transition: all 0.3s ease;
+        }
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+        .glass-card:hover {
+            border: 1px solid rgba(247, 92, 126, 0.6);
+            box-shadow: 0 0 20px rgba(247, 92, 126, 0.2);
+            transform: translateY(-5px);
+        }
 
-  <style>
+        /* Text Glow */
+        .text-glow-pink { text-shadow: 0 0 10px #F75C7E; }
+        .text-glow-purple { text-shadow: 0 0 10px #7F5AF0; }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
-    }
-
-    body{
-      font-family:'Space Grotesk',sans-serif;
-      background:#0d1117;
-      color:white;
-      overflow-x:hidden;
-      background-image:
-      radial-gradient(circle at top right,#7f5af033,transparent 25%),
-      radial-gradient(circle at bottom left,#f75c7e22,transparent 25%);
-    }
-
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
-
-    .container{
-      width:90%;
-      max-width:1300px;
-      margin:auto;
-    }
-
-    header{
-      position:sticky;
-      top:0;
-      z-index:999;
-      backdrop-filter:blur(20px);
-      background:#0d1117d9;
-      border-bottom:1px solid rgba(255,255,255,0.08);
-    }
-
-    nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:22px 0;
-    }
-
-    .logo{
-      font-size:30px;
-      font-weight:700;
-      color:#F75C7E;
-      letter-spacing:3px;
-    }
-
-    .nav-links{
-      display:flex;
-      gap:35px;
-      color:#c9d1d9;
-    }
-
-    .nav-links a:hover{
-      color:#F75C7E;
-    }
-
-    .hero{
-      min-height:100vh;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      align-items:center;
-      gap:70px;
-      padding:120px 0;
-    }
-
-    .tag{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:14px 22px;
-      border-radius:999px;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(247,92,126,.3);
-      margin-bottom:30px;
-      color:#c9d1d9;
-    }
-
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:#F75C7E;
-      animation:pulse 1.5s infinite;
-    }
-
-    @keyframes pulse{
-      0%{transform:scale(1)}
-      50%{transform:scale(1.5);opacity:.5}
-      100%{transform:scale(1)}
-    }
-
-    .hero h1{
-      font-size:clamp(3rem,8vw,6rem);
-      line-height:1.05;
-      font-weight:700;
-    }
-
-    .hero h1 span{
-      color:#F75C7E;
-    }
-
-    .hero p{
-      margin-top:30px;
-      color:#9ca3af;
-      line-height:1.9;
-      font-size:18px;
-      max-width:650px;
-    }
-
-    .buttons{
-      margin-top:40px;
-      display:flex;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      padding:16px 30px;
-      border-radius:18px;
-      transition:.3s;
-      font-weight:600;
-    }
-
-    .primary{
-      background:#F75C7E;
-      color:black;
-    }
-
-    .secondary{
-      border:1px solid rgba(255,255,255,0.1);
-      background:rgba(255,255,255,0.04);
-    }
-
-    .btn:hover{
-      transform:translateY(-5px);
-    }
-
-    .terminal{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:30px;
-      padding:35px;
-      backdrop-filter:blur(20px);
-      box-shadow:0 0 50px rgba(127,90,240,.15);
-    }
-
-    .terminal-top{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      margin-bottom:25px;
-    }
-
-    .lights{
-      display:flex;
-      gap:10px;
-    }
-
-    .lights div{
-      width:12px;
-      height:12px;
-      border-radius:50%;
-    }
-
-    .red{background:#ff5f56}
-    .yellow{background:#ffbd2e}
-    .green{background:#27c93f}
-
-    pre{
-      overflow:auto;
-      color:#c9d1d9;
-      line-height:2;
-    }
-
-    section{
-      padding:120px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      margin-bottom:70px;
-    }
-
-    .section-title p{
-      color:#F75C7E;
-      font-weight:600;
-      letter-spacing:2px;
-    }
-
-    .section-title h2{
-      font-size:clamp(2.5rem,5vw,4rem);
-      margin-top:15px;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:28px;
-      padding:35px;
-      transition:.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-      border-color:#F75C7E;
-    }
-
-    .card h3{
-      color:#F75C7E;
-      margin-bottom:20px;
-      font-size:24px;
-    }
-
-    .card p{
-      color:#9ca3af;
-      line-height:1.8;
-    }
-
-    .stack-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-      gap:20px;
-    }
-
-    .tech{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      padding:25px;
-      border-radius:24px;
-      text-align:center;
-      transition:.3s;
-      font-weight:600;
-    }
-
-    .tech:hover{
-      border-color:#F75C7E;
-      transform:translateY(-8px);
-      color:#F75C7E;
-    }
-
-    .quote{
-      background:linear-gradient(to right,rgba(127,90,240,.2),rgba(247,92,126,.2));
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:40px;
-      padding:80px 40px;
-      text-align:center;
-    }
-
-    .quote h2{
-      font-size:clamp(2rem,5vw,4rem);
-      line-height:1.3;
-    }
-
-    .quote p{
-      margin-top:25px;
-      color:#9ca3af;
-      line-height:1.9;
-      max-width:800px;
-      margin-inline:auto;
-    }
-
-    footer{
-      border-top:1px solid rgba(255,255,255,0.08);
-      padding:70px 0;
-      text-align:center;
-    }
-
-    .socials{
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:18px;
-      margin-top:35px;
-    }
-
-    .social{
-      padding:14px 24px;
-      border-radius:18px;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      transition:.3s;
-    }
-
-    .social:hover{
-      background:#F75C7E;
-      color:black;
-      transform:translateY(-5px);
-    }
-
-    .footer-text{
-      margin-top:40px;
-      color:#6b7280;
-    }
-
-    @media(max-width:768px){
-
-      .nav-links{
-        display:none;
-      }
-
-      .hero{
-        text-align:center;
-      }
-
-      .buttons{
-        justify-content:center;
-      }
-
-      .hero p{
-        margin-inline:auto;
-      }
-
-    }
-
-  </style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0d1117; }
+        ::-webkit-scrollbar-thumb { background: #7F5AF0; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #F75C7E; }
+    </style>
 </head>
-
 <body>
-
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">SHAHRIYAR</div>
-
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#stack">Stack</a>
-          <a href="#workspace">Workspace</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <div class="container">
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-      <div>
-
-        <div class="tag">
-          <div class="dot"></div>
-          Available for creative projects
-        </div>
-
-        <h1>
-          Building <span>Future</span><br>
-          Through Code.
-        </h1>
-
-        <p>
-          Shahriyar Sojib Hasan — Full-stack developer, hacker, Linux enthusiast, cyberpunk UI designer, and open-source explorer passionate about building futuristic digital experiences.
-        </p>
-
-        <div class="buttons">
-          <a href="https://github.com/shahriyarsojibhasan" class="btn primary">GitHub</a>
-
-          <a href="https://x.com/shahriyarsojib_" class="btn secondary">Connect</a>
-        </div>
-
-      </div>
-
-      <div class="terminal">
-
-        <div class="terminal-top">
-
-          <div class="lights">
-            <div class="red"></div>
-            <div class="yellow"></div>
-            <div class="green"></div>
-          </div>
-
-          <span>terminal.sh</span>
-
-        </div>
-
-<pre>
-┌──(shahriyar㉿cyberdeck)-[~/workspace]
-└─$ whoami
-
-> Full-Stack Developer
-> Linux Power User
-> Cyberpunk UI Designer
-> Open Source Enthusiast
-
-┌──(shahriyar㉿cyberdeck)-[~/workspace]
-└─$ sudo deploy future
-
-████████████████████ 100%
-Deployment successful 🚀
-</pre>
-
-      </div>
-
-    </section>
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-      <div class="section-title">
-        <p>ABOUT ME</p>
-        <h2>Cyberpunk Mindset</h2>
-      </div>
-
-      <div class="cards">
-
-        <div class="card">
-          <h3>Identity</h3>
-
-          <p>
-            Full-stack developer, hacker, Linux enthusiast, terminal customization lover, and futuristic interface designer.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Workspace</h3>
-
-          <p>
-            Windows 10, Kali Linux, Android Studio, VS Code, Bash, ZSH, and Windows Terminal.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Lifestyle</h3>
-
-          <p>
-            Coffee ☕ • Music 🎧 • Night coding 🌙 • Cyberpunk aesthetics 🌌
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Dream</h3>
-
-          <p>
-            Dreaming to travel the world while coding and building futuristic products 🌍
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- TECH STACK -->
-
-    <section id="stack">
-
-      <div class="section-title">
-        <p>TECH STACK</p>
-        <h2>Technologies I Use</h2>
-      </div>
-
-      <div class="stack-grid">
-
-        <div class="tech">JavaScript</div>
-        <div class="tech">TypeScript</div>
-        <div class="tech">Python</div>
-        <div class="tech">Rust</div>
-        <div class="tech">React</div>
-        <div class="tech">Next.js</div>
-        <div class="tech">Node.js</div>
-        <div class="tech">Docker</div>
-        <div class="tech">Kubernetes</div>
-        <div class="tech">MongoDB</div>
-        <div class="tech">PostgreSQL</div>
-        <div class="tech">Redis</div>
-        <div class="tech">Linux</div>
-        <div class="tech">GitHub Actions</div>
-        <div class="tech">Android Studio</div>
-
-      </div>
-
-    </section>
-
-    <!-- WORKSPACE -->
-
-    <section id="workspace">
-
-      <div class="section-title">
-        <p>DIGITAL WORKSPACE</p>
-        <h2>My Setup</h2>
-      </div>
-
-      <div class="cards">
-
-        <div class="card">
-          <h3>Operating System</h3>
-          <p>
-            Windows 10<br>
-            Kali Linux<br>
-            WSL2
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Editors</h3>
-          <p>
-            VS Code<br>
-            Android Studio<br>
-            Neovim
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Terminal</h3>
-          <p>
-            Windows Terminal<br>
-            Bash<br>
-            ZSH<br>
-            PowerShell
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Environment</h3>
-          <p>
-            Coffee ☕<br>
-            Music 🎧<br>
-            Cyberpunk UI 🌌
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- QUOTE -->
-
-    <section>
-
-      <div class="quote">
-
-        <h2>
-          Design systems that feel alive.
-        </h2>
-
-        <p>
-          I believe technology should not only function perfectly but also create unforgettable emotional experiences through futuristic interfaces and clean architecture.
-        </p>
-
-      </div>
-
-    </section>
-
-  </div>
-
-  <!-- FOOTER -->
-
-  <footer id="contact">
-
-    <div class="container">
-
-      <h2 style="font-size:40px;color:#F75C7E;">
-        Shahriyar Sojib Hasan
-      </h2>
-
-      <p style="margin-top:20px;color:#9ca3af;">
-        শাহরিয়ার সজিব হাসান • Full Stack Developer • Cyberpunk Builder
-      </p>
-
-      <div class="socials">
-
-        <a class="social" href="https://github.com/shahriyarsojibhasan">
-          GitHub
-        </a>
-
-        <a class="social" href="https://x.com/shahriyarsojib_">
-          X
-        </a>
-
-        <a class="social" href="https://instagram.com/shahriyarsojibhasan">
-          Instagram
-        </a>
-
-        <a class="social" href="https://facebook.com/shahriyarsojibhasan">
-          Facebook
-        </a>
-
-        <a class="social" href="https://linkedin.com/in/shahriyarsojibhasan">
-          LinkedIn
-        </a>
-
-        <a class="social" href="https://youtube.com/@shahriyarsojibhasan">
-          YouTube
-        </a>
-
-        <a class="social" href="https://buymeacoffee.com/shahriyarsojibhasan">
-          BuyMeACoffee
-        </a>
-
-      </div>
-
-      <div class="footer-text">
-        © 2026 Shahriyar Sojib Hasan • Dreaming beyond borders 🌍
-      </div>
-
-    </div>
-
-  </footer>
-
-  <!-- SEO JSON -->
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Shahriyar Sojib Hasan",
-    "alternateName":[
-      "Shahriyar",
-      "শাহরিয়ার সজিব হাসান"
-    ],
-    "url":"https://shahriyarsojibhasan.github.io",
-    "sameAs":[
-      "https://github.com/shahriyarsojibhasan",
-      "https://x.com/shahriyarsojib_",
-      "https://instagram.com/shahriyarsojibhasan",
-      "https://facebook.com/shahriyarsojibhasan",
-      "https://linkedin.com/in/shahriyarsojibhasan",
-      "https://youtube.com/@shahriyarsojibhasan"
-    ],
-    "jobTitle":"Full Stack Developer"
-  }
-  </script>
-
+    <div class="scanlines"></div>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const Navbar = () => (
+            <nav className="fixed w-full z-50 top-0 transition-all duration-300 glass-card border-b-0 border-t-0 border-l-0 border-r-0 border-b border-neonPurple/30">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center justify-between h-20">
+                        <div className="flex-shrink-0">
+                            <span className="font-orbitron font-bold text-2xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-neonPink to-neonPurple text-glow-pink">
+                                SHAHRIYAR.SYS
+                            </span>
+                        </div>
+                        <div className="hidden md:block">
+                            <div className="ml-10 flex items-baseline space-x-8 font-space">
+                                <a href="#home" className="hover:text-neonPink transition-colors duration-300">Home</a>
+                                <a href="#about" className="hover:text-neonPink transition-colors duration-300">Identity</a>
+                                <a href="#stack" className="hover:text-neonPink transition-colors duration-300">Arsenal</a>
+                                <a href="#workspace" className="hover:text-neonPink transition-colors duration-300">Workspace</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        );
+
+        const Hero = () => (
+            <section id="home" className="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative flex flex-col items-center justify-center min-h-screen text-center">
+                {/* Background ambient glow */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neonPurple/20 rounded-full blur-[120px] pointer-events-none"></div>
+                <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-neonPink/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+                <h1 className="font-orbitron text-5xl md:text-7xl font-black mb-6 leading-tight z-10">
+                    Crafting Digital Worlds <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPink to-neonPurple text-glow-pink">Beyond Reality</span>
+                </h1>
+                
+                <p className="font-space text-lg md:text-xl text-gray-300 max-w-3xl mb-10 z-10 leading-relaxed">
+                    Shahriyar Sojib Hasan is a futuristic full-stack developer, hacker, Linux power user, and cyberpunk UI architect creating immersive digital experiences inspired by modern technology, neon aesthetics, and futuristic interfaces.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-6 z-10 font-orbitron tracking-widest">
+                    <a href="https://github.com/shahriyarsojibhasan" target="_blank" className="px-8 py-4 border border-neonPink text-neonPink uppercase text-sm font-bold shadow-neon-pink hover:shadow-neon-pink-hover hover:bg-neonPink hover:text-darkBg transition-all duration-300 rounded-sm">
+                        <i className="fab fa-github mr-2"></i> Explore GitHub
+                    </a>
+                    <a href="#footer" className="px-8 py-4 border border-neonPurple text-neonPurple uppercase text-sm font-bold shadow-neon-purple hover:bg-neonPurple hover:text-darkBg transition-all duration-300 rounded-sm">
+                        <i className="fas fa-network-wired mr-2"></i> Connect With Me
+                    </a>
+                </div>
+            </section>
+        );
+
+        const Terminal = () => {
+            return (
+                <section className="py-10 px-4 max-w-4xl mx-auto relative z-10 font-space">
+                    <div className="rounded-lg overflow-hidden border border-neonPurple/50 shadow-glass bg-[#0a0a0f]">
+                        <div className="bg-[#1a1b26] px-4 py-2 flex items-center gap-2 border-b border-neonPurple/30">
+                            <div className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_5px_red]"></div>
+                            <div className="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_0_5px_yellow]"></div>
+                            <div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_5px_green]"></div>
+                            <span className="ml-4 text-xs text-gray-400 font-orbitron tracking-widest">guest@cyber-core:~</span>
+                        </div>
+                        <div className="p-6 text-sm md:text-base text-green-400 font-mono h-64 overflow-y-auto">
+                            <p className="mb-2"><span className="text-neonPink">guest@cyber-core:~$</span> ./fetch_identity.sh</p>
+                            <p className="mb-1 text-gray-300">[+] Establishing secure connection to mainframe...</p>
+                            <p className="mb-1 text-gray-300">[+] Decrypting profile data...</p>
+                            <br />
+                            <p className="mb-1 text-neonPurple">> NAME: <span className="text-white">Shahriyar Sojib Hasan</span></p>
+                            <p className="mb-1 text-neonPurple">> DESIGNATION: <span className="text-white">Full-Stack Dev | Hacker | UI Architect</span></p>
+                            <p className="mb-1 text-neonPurple">> CURRENT_OBJECTIVE: <span className="text-white">Travel the world while coding</span></p>
+                            <p className="mb-1 text-neonPurple">> STATUS: <span className="text-green-400 glow">ONLINE</span></p>
+                            <br />
+                            <p className="animate-pulse"><span className="text-neonPink">guest@cyber-core:~$</span> █</p>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const About = () => {
+            const traits = [
+                { icon: 'fa-code', title: 'Full-Stack Developer' },
+                { icon: 'fa-user-secret', title: 'Hacker' },
+                { icon: 'fa-linux', title: 'Linux Enthusiast' },
+                { icon: 'fa-globe-node', title: 'Open-Source Explorer' },
+                { icon: 'fa-palette', title: 'Cyberpunk UI Designer' },
+                { icon: 'fa-terminal', title: 'Terminal Customizer' },
+                { icon: 'fa-headphones', title: 'Loves Music & Coffee' },
+                { icon: 'fa-plane-departure', title: 'World Traveler (Dream)' }
+            ];
+
+            return (
+                <section id="about" className="py-20 px-4 max-w-6xl mx-auto relative z-10">
+                    <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-center text-glow-purple">
+                        <span className="text-neonPurple">01.</span> IDENTITY_MATRIX
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-space">
+                        {traits.map((trait, index) => (
+                            <div key={index} className="glass-card p-6 rounded-lg text-center flex flex-col items-center justify-center min-h-[160px]">
+                                <i className={`fas ${trait.icon} text-4xl text-neonPink mb-4`}></i>
+                                <h3 className="font-semibold text-lg">{trait.title}</h3>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            );
+        };
+
+        const TechStack = () => (
+            <section id="stack" className="py-20 px-4 max-w-6xl mx-auto text-center relative z-10">
+                <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-glow-pink">
+                    <span className="text-neonPink">02.</span> NEURAL_NETWORK
+                </h2>
+                <div className="glass-card p-10 rounded-lg inline-block">
+                    <p className="font-space text-gray-300 mb-8 italic">"The languages and tools that power my digital constructs."</p>
+                    <img 
+                        src="https://skillicons.dev/icons?i=js,ts,python,rust,react,nextjs,nodejs,docker,kubernetes,mongodb,postgres,redis,linux,githubactions&theme=dark&perline=7" 
+                        alt="Tech Stack" 
+                        className="mx-auto hover:scale-105 transition-transform duration-500 drop-shadow-[0_0_15px_rgba(127,90,240,0.5)]"
+                    />
+                </div>
+            </section>
+        );
+
+        const Workspace = () => {
+            const tools = ["Windows 10", "Kali Linux", "Android Studio", "VS Code", "Windows Terminal", "Bash", "ZSH"];
+            return (
+                <section id="workspace" className="py-20 px-4 max-w-4xl mx-auto relative z-10">
+                    <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-center text-glow-purple">
+                        <span className="text-neonPurple">03.</span> SYSTEM_PREF
+                    </h2>
+                    <div className="flex flex-wrap justify-center gap-4 font-space font-semibold tracking-wide">
+                        {tools.map((tool, idx) => (
+                            <span key={idx} className="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg cursor-crosshair">
+                                <i className="fas fa-microchip mr-2"></i>{tool}
+                            </span>
+                        ))}
+                    </div>
+                </section>
+            );
+        };
+
+        const Philosophy = () => (
+            <section className="py-24 px-4 relative z-10">
+                <div className="max-w-4xl mx-auto glass-card p-12 rounded-lg border-l-4 border-l-neonPink relative overflow-hidden">
+                    <div className="absolute top-0 right-0 p-8 opacity-10">
+                        <i className="fas fa-quote-right text-9xl text-neonPink"></i>
+                    </div>
+                    <p className="font-space text-2xl md:text-3xl text-gray-200 leading-relaxed relative z-10 italic">
+                        "The terminal is my canvas, code is my brush, and the internet is the gallery where my futuristic visions come to life."
+                    </p>
+                    <p className="mt-6 font-orbitron text-neonPurple font-bold tracking-widest uppercase">
+                        - Shahriyar Sojib Hasan
+                    </p>
+                </div>
+            </section>
+        );
+
+        const Footer = () => {
+            const socials = [
+                { icon: 'fa-github', link: 'https://github.com/shahriyarsojibhasan', name: 'GitHub' },
+                { icon: 'fa-twitter', link: 'https://twitter.com/shahriyarsojib_', name: 'X/Twitter' },
+                { icon: 'fa-instagram', link: 'https://instagram.com/shahriyarsojibhasan', name: 'Instagram' },
+                { icon: 'fa-facebook-f', link: 'https://facebook.com/shahriyarsojibhasan', name: 'Facebook' },
+                { icon: 'fa-linkedin-in', link: 'https://linkedin.com/in/shahriyarsojibhasan', name: 'LinkedIn' },
+                { icon: 'fa-youtube', link: 'https://youtube.com/@shahriyarsojibhasan', name: 'YouTube' },
+                { icon: 'fa-mug-hot', link: 'https://buymeacoffee.com/shahriyarsojibhasan', name: 'BuyMeACoffee' }
+            ];
+
+            return (
+                <footer id="footer" className="pt-20 pb-10 px-4 border-t border-neonPurple/30 bg-[#080b0f] relative z-10">
+                    <div className="max-w-6xl mx-auto text-center">
+                        <h2 className="font-orbitron text-2xl mb-8 text-glow-pink">ESTABLISH_COMM_LINK</h2>
+                        <div className="flex flex-wrap justify-center gap-6 mb-12">
+                            {socials.map((social, idx) => (
+                                <a key={idx} href={social.link} target="_blank" rel="noopener noreferrer" 
+                                   className="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 group relative">
+                                    <i className={`fab ${social.icon} group-hover:scale-110 transition-transform`}></i>
+                                    {social.icon === 'fa-mug-hot' && <i className={`fas fa-mug-hot group-hover:scale-110 transition-transform`}></i>}
+                                </a>
+                            ))}
+                        </div>
+                        <p className="font-space text-gray-500 text-sm tracking-widest">
+                            &copy; {new Date().getFullYear()} SHAHRIYAR SOJIB HASAN. ALL RIGHTS RESERVED. <br/>
+                            <span className="text-neonPurple text-xs mt-2 block">SYSTEM VERION 2.0.26 // CYBERPUNK EDITION</span>
+                        </p>
+                    </div>
+                </footer>
+            );
+        };
+
+        const App = () => {
+            return (
+                <div className="min-h-screen selection:bg-neonPink selection:text-darkBg">
+                    <Navbar />
+                    <Hero />
+                    <Terminal />
+                    <About />
+                    <TechStack />
+                    <Workspace />
+                    <Philosophy />
+                    <Footer />
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
 </body>
 </html>
