@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&color=0:0d1117,50:7F5AF0,100:F75C7E&text=Shahriyar%20Sojib%20Hasan&fontColor=ffffff&fontSize=44&fontAlignY=38&animation=fadeIn&desc=Full-Stack%20Developer%20%E2%80%A2%20Hacker%20%E2%80%A2%20Cyberpunk%20Builder&descAlignY=58"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&color=0:0d1117,50:7F5AF0,100:F75C7E&text=Shahriyar%20Sojib%20Hasan&fontColor=ffffff&fontSize=44&fontAlignY=38&animation=fadeIn&desc=Cyberpunk%20Developer%20•%20Hacker%20•%20Open%20Source%20Enthusiast&descAlignY=58"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1200&color=F75C7E&center=true&vCenter=true&width=900&lines=Full-Stack+Developer;Linux+%2B+Terminal+Customization+Lover;Android+Studio+Power+User;Building+Futuristic+Digital+Experiences;Coffee+%2B+Code+%2B+Cyberpunk+Vibes;Dreaming+to+travel+the+world+while+coding" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1200&color=F75C7E&center=true&vCenter=true&width=950&lines=Full-Stack+Developer;Cyberpunk+UI%2FUX+Designer;Linux+Power+User;Android+Studio+Developer;Coffee+%2B+Code+%2B+Music;Dreaming+to+travel+the+world+while+coding" />
 
 <br/>
 
@@ -14,11 +14,7 @@
 
 ---
 
-<div align="center">
-
-# 🌸 CYBERPUNK DEVELOPER PROFILE
-
-</div>
+# 🌸 ABOUT ME
 
 <table>
 <tr>
@@ -29,23 +25,29 @@ name: Shahriyar Sojib Hasan
 birthday: 29 May
 role: Full-Stack Developer
 
-specialities:
+identity:
   - Hacker
+  - Coder
   - Open Source Enthusiast
-  - UI/UX Explorer
-  - Terminal Customizer
+  - Cyberpunk Designer
 
-currently_learning:
-  - Kubernetes
-  - Rust
-  - Cloud Native Systems
-  - Advanced DevOps
+loves:
+  - Linux
+  - Terminal Customization
+  - Android Development
+  - Futuristic UI/UX
+  - Music
+  - Coffee
+  - Travel
 
-lifestyle:
-  - Coffee addicted ☕
-  - Music lover 🎧
-  - Linux power user 🐧
-  - Loves futuristic UI 🌌
+workspace:
+  - Windows 10
+  - Kali Linux
+  - Android Studio
+  - VS Code
+  - Windows Terminal
+  - Bash
+  - ZSH
 
 dream:
   Travel the world while coding 🌍
@@ -105,10 +107,10 @@ WSL2
 <img src="https://skillicons.dev/icons?i=bash"/>
 
 ```bash
+Windows Terminal
 PowerShell
 ZSH
 Bash
-Windows Terminal
 ```
 
 </td>
@@ -129,13 +131,13 @@ Neovim
 
 <td align="center" width="25%">
 
-### ☕ ENVIRONMENT
+### ☕ LIFESTYLE
 
 ```bash
 Coffee ☕
 Music 🎧
+Travel 🌍
 Night Coding 🌙
-Cyberpunk UI 🌌
 ```
 
 </td>
@@ -151,13 +153,13 @@ Cyberpunk UI 🌌
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=shahriyarsojibhasan&show_icons=true&theme=transparent&hide_border=true&title_color=F75C7E&icon_color=F75C7E&text_color=c9d1d9&ring_color=7F5AF0"/>
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=shahriyarsojibhasan&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=F75C7E&icon_color=F75C7E&text_color=ffffff"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shahriyarsojibhasan&layout=compact&theme=transparent&hide_border=true&title_color=F75C7E&text_color=c9d1d9"/>
+<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=shahriyarsojibhasan&theme=radical&hide_border=true&background=0d1117&ring=F75C7E&fire=F75C7E&currStreakLabel=F75C7E"/>
 
 <br/><br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=shahriyarsojibhasan&bg_color=0d1117&color=F75C7E&line=7F5AF0&point=FFFFFF&area=true&hide_border=true"/>
+<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shahriyarsojibhasan&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=F75C7E&text_color=ffffff"/>
 
 </div>
 
@@ -181,10 +183,10 @@ Cyberpunk UI 🌌
 💡 IDEA
    │
    ▼
-🎨 DESIGN UI/UX
+🎨 DESIGN
    │
    ▼
-⚙️ BUILD SYSTEM
+⚙️ DEVELOPMENT
    │
    ▼
 🐳 DOCKERIZE
@@ -193,7 +195,7 @@ Cyberpunk UI 🌌
 ☁️ DEPLOY
    │
    ▼
-🚀 SCALE & OPTIMIZE
+🚀 SCALE
 ```
 
 </div>
@@ -208,41 +210,41 @@ Cyberpunk UI 🌌
 ┌──(shahriyar㉿cyberdeck)-[~/workspace]
 └─$ fastfetch
 
-OS        : Windows 10 + Kali Linux
-Terminal  : Windows Terminal
-Editor    : VS Code / Android Studio
-Shell     : ZSH / Bash
-Uptime    : Coding all night ☕
+OS           : Windows 10 + Kali Linux
+Terminal     : Windows Terminal
+Editor       : VS Code / Android Studio
+Shell        : ZSH / Bash
+Focus        : Building futuristic experiences
+Fuel         : Coffee + Music ☕
 
 ┌──(shahriyar㉿cyberdeck)-[~/workspace]
-└─$ sudo deploy future
+└─$ sudo build future
 
 [████████████████████████] 100%
 
-Future deployed successfully 🚀
+Future successfully deployed 🚀
 ```
 
 </div>
 
 ---
 
-# 🌌 CYBERPUNK PHILOSOPHY
+# 🌌 PHILOSOPHY
 
 <div align="center">
 
-> Build systems that look beautiful,  
-> feel futuristic,  
-> and perform like machines from the future.
+> Build systems that feel alive.  
+> Design experiences that people never forget.
 
 <br/>
 
-> Minimal design. Maximum impact.
+> Minimal aesthetics. Maximum performance.
 
 </div>
 
 ---
 
-# 🌐 CONNECT
+# 🌐 CONNECT WITH ME
 
 <div align="center">
 
@@ -252,6 +254,30 @@ Future deployed successfully 🚀
 
 <a href="https://x.com/shahriyarsojib_">
 <img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=white"/>
+</a>
+
+<a href="https://instagram.com/shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/Instagram-F75C7E?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+<a href="https://facebook.com/shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+</a>
+
+<a href="https://linkedin.com/in/shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://youtube.com/@shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+
+<a href="https://t.me/shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
+</a>
+
+<a href="https://discord.com/shahriyarsojibhasan">
+<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
 </a>
 
 <a href="https://buymeacoffee.com/shahriyarsojibhasan">
@@ -272,12 +298,24 @@ Future deployed successfully 🚀
 
 ---
 
+# 🧠 CURRENT MINDSET
+
+<div align="center">
+
+```text
+Code. Create. Explore. Repeat.
+```
+
+</div>
+
+---
+
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:0d1117,50:7F5AF0,100:F75C7E"/>
 
 ### ⚡ SHAHRIYAR SOJIB HASAN ⚡
 
-Cyberpunk soul • Linux enthusiast • Open source explorer
+Cyberpunk soul • Linux enthusiast • Open source explorer • Dreaming beyond borders 🌍
 
 </div>
