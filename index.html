@@ -1,277 +1,306 @@
-html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- Basic SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahriyar Sojib Hasan | Full-Stack Developer & UI Architect</title>
-    <meta name="description" content="Portfolio of Shahriyar Sojib Hasan, a futuristic full-stack developer, hacker, and cyberpunk UI architect crafting digital experiences beyond reality.">
-    <meta name="keywords" content="Shahriyar Sojib Hasan, Full-Stack Developer, Cyberpunk UI, Web Developer Bangladesh, Open Source, React, Node.js, Programmer">
+    
+    <title>Shahriyar Sojib Hasan | Full-Stack Developer & Ethical Hacker</title>
+    <meta name="description" content="Portfolio of Shahriyar Sojib Hasan. Expert in Full Stack Development, Crypto Analytics, Blockchain Research, Ethical Hacking, and AI Automation.">
+    <meta name="keywords" content="Shahriyar Sojib Hasan, Shahriyar SYS, Full Stack Developer Bangladesh, Ethical Hacker Bangladesh, Crypto Analytics, OSINT, Infinity Course, AI Builder">
     <meta name="author" content="Shahriyar Sojib Hasan">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="[https://shahriyarsojibhasan.github.io/](https://shahriyarsojibhasan.github.io/)">
 
-    <!-- Open Graph / Facebook SEO -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="[https://shahriyarsojibhasan.github.io/](https://shahriyarsojibhasan.github.io/)">
-    <meta property="og:title" content="Shahriyar Sojib Hasan | Futuristic Developer">
-    <meta property="og:description" content="Futuristic full-stack developer, hacker, and cyberpunk UI architect crafting digital experiences.">
-    <meta property="og:image" content="[https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/refs/heads/main/shahriyar.jpg](https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/refs/heads/main/shahriyar.jpg)"> <!-- Replace with a real image link -->
-
-    <!-- Twitter Card SEO -->
+    <meta property="og:title" content="Shahriyar Sojib Hasan | Digital Architect">
+    <meta property="og:description" content="Turning volatile data into alpha. Explore my coding, hacking, and blockchain research.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/main/shahriyar.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@shahriyarsojib_">
-    <meta name="twitter:title" content="Shahriyar Sojib Hasan | Futuristic Developer">
-    <meta name="twitter:description" content="Futuristic full-stack developer, hacker, and cyberpunk UI architect crafting digital experiences.">
-    <meta name="twitter:image" content="[https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/refs/heads/main/shahriyar.jpg](https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/refs/heads/main/shahriyar.jpg)"> <!-- Replace with a real image link -->
 
-    <!-- Performance & Fonts Preconnect -->
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
-
-    <!-- JSON-LD Schema Markup for Google Rich Results -->
-    <script type="application/ld+json">
-    {
-      "@context": "[https://schema.org](https://schema.org)",
-      "@type": "Person",
-      "name": "Shahriyar Sojib Hasan",
-      "url": "[https://shahriyarsojibhasan.github.io/](https://shahriyarsojibhasan.github.io/)",
-      "jobTitle": "Full-Stack Developer & UI Architect",
-      "description": "A futuristic full-stack developer, hacker, Linux power user, and cyberpunk UI architect.",
-      "sameAs": [
-        "[https://github.com/shahriyarsojibhasan](https://github.com/shahriyarsojibhasan)",
-        "[https://linkedin.com/in/shahriyarsojibhasan](https://linkedin.com/in/shahriyarsojibhasan)",
-        "[https://twitter.com/shahriyarsojib](https://twitter.com/shahriyarsojib)_",
-        "[https://instagram.com/shahriyarsojibhasan](https://instagram.com/shahriyarsojibhasan)",
-        "[https://facebook.com/shahriyarsojibhasan](https://facebook.com/shahriyarsojibhasan)",
-        "[https://youtube.com/@shahriyarsojibhasan](https://youtube.com/@shahriyarsojibhasan)"
-      ]
-    }
-    </script>
-
-    <!-- Tailwind CSS -->
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0d1117',
-                        neonPink: '#F75C7E',
-                        neonPurple: '#7F5AF0',
+                        void: '#000000',
+                        cyanNeon: '#00f2ff',
+                        magentaNeon: '#ff00e5',
+                        goldAlpha: '#f3ba2f',
                     },
                     fontFamily: {
                         orbitron: ['Orbitron', 'sans-serif'],
-                        space: ['Space Grotesk', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'neon-pink': '0 0 10px #F75C7E, inset 0 0 10px #F75C7E',
-                        'neon-purple': '0 0 10px #7F5AF0, inset 0 0 10px #7F5AF0',
-                        'neon-pink-hover': '0 0 20px #F75C7E, inset 0 0 15px #F75C7E',
-                        'glass': '0 8px 32px 0 rgba(127, 90, 240, 0.2)',
+                        mono: ['JetBrains Mono', 'monospace'],
                     }
                 }
             }
         }
     </script>
 
-    <!-- Custom CSS -->
     <style>
-        body { background-color: #0d1117; color: #ffffff; margin: 0; overflow-x: hidden; }
-        .scanlines {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
-            background-size: 100% 4px; pointer-events: none; z-index: 9999; opacity: 0.3;
+        body { background-color: #000; color: #fff; overflow-x: hidden; margin: 0; }
+        
+        /* DENSE MESH BACKGROUND (ALWAYS VISIBLE) */
+        #nexus-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; pointer-events: none; opacity: 0.9;
         }
+
+        /* ULTRA TRANSPARENT BENTO CARDS */
         .glass-card {
-            background: rgba(13, 17, 23, 0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(127, 90, 240, 0.3); transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.03); /* Almost invisible bg */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.25rem;
+            transition: all 0.4s ease;
         }
         .glass-card:hover {
-            border: 1px solid rgba(247, 92, 126, 0.6); box-shadow: 0 0 20px rgba(247, 92, 126, 0.2); transform: translateY(-5px);
+            border-color: rgba(0, 242, 255, 0.5);
+            background: rgba(255, 255, 255, 0.06);
+            transform: scale(1.01);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
         }
-        .text-glow-pink { text-shadow: 0 0 10px #F75C7E; }
-        .text-glow-purple { text-shadow: 0 0 10px #7F5AF0; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0d1117; }
-        ::-webkit-scrollbar-thumb { background: #7F5AF0; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #F75C7E; }
+
+        .glow-cyan { text-shadow: 0 0 10px #00f2ff; }
+        .glow-gold { text-shadow: 0 0 10px #f3ba2f; }
+        
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
     </style>
 </head>
-<body class="selection:bg-neonPink selection:text-darkBg">
-    <div class="scanlines" aria-hidden="true"></div>
+<body class="font-mono antialiased selection:bg-cyanNeon selection:text-black">
 
-    <!-- Navigation -->
-    <nav aria-label="Main Navigation" class="fixed w-full z-50 top-0 transition-all duration-300 glass-card border-b border-neonPurple/30 border-t-0 border-l-0 border-r-0">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="#" aria-label="Homepage">
-                        <span class="font-orbitron font-bold text-2xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-neonPink to-neonPurple text-glow-pink">
-                            SHAHRIYAR.SYS
-                        </span>
-                    </a>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8 font-space">
-                        <a href="#home" class="hover:text-neonPink transition-colors duration-300">Home</a>
-                        <a href="#about" class="hover:text-neonPink transition-colors duration-300">Identity</a>
-                        <a href="#stack" class="hover:text-neonPink transition-colors duration-300">Arsenal</a>
-                        <a href="#workspace" class="hover:text-neonPink transition-colors duration-300">Workspace</a>
-                    </div>
-                </div>
+    <canvas id="nexus-canvas"></canvas>
+
+    <nav class="fixed top-0 w-full z-50 p-4">
+        <div class="max-w-6xl mx-auto glass-card px-6 py-3 flex justify-between items-center">
+            <span class="font-orbitron font-black text-cyanNeon glow-cyan text-sm tracking-widest">SHAHRIYAR.SYS</span>
+            <div class="hidden md:flex gap-6 text-[9px] uppercase font-bold tracking-[0.2em]">
+                <a href="#identity" class="hover:text-cyanNeon">Protocol</a>
+                <a href="#arsenal" class="hover:text-cyanNeon">Arsenal</a>
+                <a href="#tools" class="hover:text-magentaNeon">Tools</a>
+                <a href="#crypto" class="hover:text-goldAlpha">Alpha</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-[8px] text-green-500 animate-pulse font-bold uppercase">Mainframe Active</span>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <header id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative flex flex-col items-center justify-center min-h-screen text-center">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neonPurple/20 rounded-full blur-[120px] pointer-events-none" aria-hidden="true"></div>
-            <div class="absolute top-1/3 left-1/3 w-72 h-72 bg-neonPink/10 rounded-full blur-[100px] pointer-events-none" aria-hidden="true"></div>
-
-            <h1 class="font-orbitron text-5xl md:text-7xl font-black mb-6 leading-tight z-10">
-                Crafting Digital Worlds <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonPink to-neonPurple text-glow-pink">Beyond Reality</span>
+    <main class="w-full max-w-6xl mx-auto px-4 pt-24 pb-12 grid grid-cols-1 md:grid-cols-6 gap-4">
+        
+        <div class="glass-card p-8 md:col-span-4 flex flex-col justify-center relative overflow-hidden">
+            <p class="text-cyanNeon text-[10px] uppercase tracking-[0.4em] mb-2 font-bold italic">Identity Matrix // Active</p>
+            <h1 class="font-orbitron text-4xl md:text-7xl font-black mb-4 tracking-tighter">
+                SHAHRIYAR <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyanNeon via-white to-magentaNeon">SOJIB HASAN</span>
             </h1>
-            
-            <p class="font-space text-lg md:text-xl text-gray-300 max-w-3xl mb-10 z-10 leading-relaxed">
-                <strong>Shahriyar Sojib Hasan</strong> is a futuristic full-stack developer, hacker, Linux power user, and cyberpunk UI architect creating immersive digital experiences inspired by modern technology, neon aesthetics, and futuristic interfaces.
+            <p class="text-gray-300 text-xs md:text-sm max-w-xl leading-relaxed mb-6 font-light">
+                Full Stack Developer ⚡ Crypto Analytics & Blockchain Research ⚡ Ethical Hacker ⚡ OSINT Specialist ⚡ AI Builder. Turning raw data into alpha since 2020.
             </p>
-            
-            <div class="flex flex-col sm:flex-row gap-6 z-10 font-orbitron tracking-widest">
-                <a href="[https://github.com/shahriyarsojibhasan](https://github.com/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" class="px-8 py-4 border border-neonPink text-neonPink uppercase text-sm font-bold shadow-neon-pink hover:shadow-neon-pink-hover hover:bg-neonPink hover:text-darkBg transition-all duration-300 rounded-sm">
-                    <i class="fab fa-github mr-2" aria-hidden="true"></i> Explore GitHub
+            <div class="flex gap-4">
+                <div class="text-center px-4 py-2 border border-white/10 rounded-lg">
+                    <span class="text-cyanNeon font-bold block text-lg">6+</span>
+                    <span class="text-[8px] text-gray-500 uppercase">Disciplines</span>
+                </div>
+                <div class="text-center px-4 py-2 border border-white/10 rounded-lg">
+                    <span class="text-magentaNeon font-bold block text-lg">∞</span>
+                    <span class="text-[8px] text-gray-500 uppercase">Ambition</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card p-6 md:col-span-2 font-mono text-[10px] space-y-2 text-cyanNeon flex flex-col justify-center">
+            <p>> initializing_sys.config...</p>
+            <p class="text-white">[+] Status: Online</p>
+            <p class="text-white">[+] Location: Bangladesh</p>
+            <p class="text-white">[+] OS: Linux (Kali/Arch)</p>
+            <p class="text-magentaNeon">> loading_arsenal...</p>
+            <p class="text-gray-500 italic">React, Node, Capacitor, Python, Rust, AI_Logic</p>
+            <p class="animate-pulse">> _</p>
+        </div>
+
+        <a id="tools" href="https://shahriyartools.netlify.app/" target="_blank" class="glass-card md:col-span-3 p-8 border-magentaNeon/20 hover:border-magentaNeon group flex items-center justify-between">
+            <div>
+                <h3 class="font-orbitron font-bold text-2xl text-white group-hover:text-magentaNeon transition">TOOL_VAULT</h3>
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">shahriyartools.netlify.app</p>
+            </div>
+            <i class="fas fa-external-link-alt text-2xl text-magentaNeon group-hover:rotate-45 transition duration-500"></i>
+        </a>
+
+        <div class="glass-card md:col-span-3 p-8 flex flex-col justify-center text-center">
+            <p class="text-[9px] text-gray-500 uppercase tracking-widest mb-4">Neural Network Arsenal</p>
+            <img src="https://skillicons.dev/icons?i=js,ts,python,rust,react,nextjs,nodejs,docker,mongodb,postgres,linux,github&theme=dark&perline=6" alt="Tech Stack" class="mx-auto grayscale hover:grayscale-0 transition duration-500">
+        </div>
+
+        <div id="crypto" class="glass-card md:col-span-6 p-8 border-goldAlpha/20">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h3 class="font-orbitron font-bold text-2xl text-goldAlpha glow-gold">ALPHA_NETWORK</h3>
+                    <p class="text-[10px] text-gray-500 uppercase tracking-[0.3em]">Blockchain Research & Exchange Gateways</p>
+                </div>
+                <a href="https://www.binance.com/en/feed/profile/shahriyarsojibhasan-" target="_blank" class="px-6 py-2 bg-goldAlpha/10 border border-goldAlpha text-goldAlpha font-bold rounded-full text-[10px] hover:bg-goldAlpha hover:text-black transition">
+                    BINANCE SQUARE: @shahriyarsojibhasan-
                 </a>
-                <a href="#footer" class="px-8 py-4 border border-neonPurple text-neonPurple uppercase text-sm font-bold shadow-neon-purple hover:bg-neonPurple hover:text-darkBg transition-all duration-300 rounded-sm">
-                    <i class="fas fa-network-wired mr-2" aria-hidden="true"></i> Connect With Me
-                </a>
             </div>
-        </header>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
+                    <span class="text-xs font-bold text-white block">BINANCE</span>
+                    <span class="text-[8px] text-goldAlpha uppercase font-bold">Verified Node</span>
+                </div>
+                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
+                    <span class="text-xs font-bold text-white block">GATE.IO</span>
+                    <span class="text-[8px] text-cyanNeon uppercase font-bold">Trading Active</span>
+                </div>
+                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
+                    <span class="text-xs font-bold text-white block">BYBIT</span>
+                    <span class="text-[8px] text-magentaNeon uppercase font-bold">Link Stable</span>
+                </div>
+                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
+                    <span class="text-xs font-bold text-white block">BITGET</span>
+                    <span class="text-[8px] text-white uppercase font-bold">Researching</span>
+                </div>
+            </div>
+        </div>
 
-        <!-- Terminal Output Section -->
-        <section aria-label="Terminal Status" class="py-10 px-4 max-w-4xl mx-auto relative z-10 font-space">
-            <div class="rounded-lg overflow-hidden border border-neonPurple/50 shadow-glass bg-[#0a0a0f]">
-                <div class="bg-[#1a1b26] px-4 py-2 flex items-center gap-2 border-b border-neonPurple/30">
-                    <div class="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_5px_red]"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_0_5px_yellow]"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_5px_green]"></div>
-                    <span class="ml-4 text-xs text-gray-400 font-orbitron tracking-widest">guest@cyber-core:~</span>
-                </div>
-                <div class="p-6 text-sm md:text-base text-green-400 font-mono h-64 overflow-y-auto">
-                    <p class="mb-2"><span class="text-neonPink">guest@cyber-core:~$</span> ./fetch_identity.sh</p>
-                    <p class="mb-1 text-gray-300">[+] Establishing secure connection to mainframe...</p>
-                    <p class="mb-1 text-gray-300">[+] Decrypting profile data...</p><br>
-                    <p class="mb-1 text-neonPurple">> NAME: <span class="text-white">Shahriyar Sojib Hasan</span></p>
-                    <p class="mb-1 text-neonPurple">> DESIGNATION: <span class="text-white">Full-Stack Dev | Hacker | UI Architect</span></p>
-                    <p class="mb-1 text-neonPurple">> CURRENT_OBJECTIVE: <span class="text-white">Travel the world while coding</span></p>
-                    <p class="mb-1 text-neonPurple">> STATUS: <span class="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.8)]">ONLINE</span></p><br>
-                    <p class="animate-pulse"><span class="text-neonPink">guest@cyber-core:~$</span> █</p>
-                </div>
-            </div>
-        </section>
+        <div id="arsenal" class="glass-card md:col-span-3 p-8">
+            <i class="fas fa-graduation-cap text-2xl text-cyanNeon mb-4"></i>
+            <h4 class="font-orbitron font-bold text-xl mb-2">Infinity Course ™</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">Full-scale EdTech ecosystem for HSC students. Features M3U8 encryption, live streaming, and Capacitor mobile integration. Built with React & Firebase.</p>
+        </div>
+        <div class="glass-card md:col-span-3 p-8">
+            <i class="fab fa-x-twitter text-2xl text-magentaNeon mb-4"></i>
+            <h4 class="font-orbitron font-bold text-xl mb-2">Twitter AI Engine</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">Sophisticated automation assistant with human-like delay logic, auto-reply, and engagement boosting via AI-driven OSINT analytics.</p>
+        </div>
 
-        <!-- About/Identity Section -->
-        <section id="about" class="py-20 px-4 max-w-6xl mx-auto relative z-10">
-            <h2 class="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-center text-glow-purple">
-                <span class="text-neonPurple">01.</span> IDENTITY_MATRIX
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-space">
-                <div class="glass-card p-6 rounded-lg text-center flex flex-col items-center justify-center min-h-[160px]">
-                    <i class="fas fa-code text-4xl text-neonPink mb-4" aria-hidden="true"></i>
-                    <h3 class="font-semibold text-lg">Full-Stack Developer</h3>
-                </div>
-                <div class="glass-card p-6 rounded-lg text-center flex flex-col items-center justify-center min-h-[160px]">
-                    <i class="fas fa-user-secret text-4xl text-neonPink mb-4" aria-hidden="true"></i>
-                    <h3 class="font-semibold text-lg">Hacker</h3>
-                </div>
-                <div class="glass-card p-6 rounded-lg text-center flex flex-col items-center justify-center min-h-[160px]">
-                    <i class="fab fa-linux text-4xl text-neonPink mb-4" aria-hidden="true"></i>
-                    <h3 class="font-semibold text-lg">Linux Enthusiast</h3>
-                </div>
-                <div class="glass-card p-6 rounded-lg text-center flex flex-col items-center justify-center min-h-[160px]">
-                    <i class="fas fa-palette text-4xl text-neonPink mb-4" aria-hidden="true"></i>
-                    <h3 class="font-semibold text-lg">Cyberpunk UI Designer</h3>
-                </div>
+        <div class="glass-card md:col-span-6 p-8 flex flex-col items-center">
+            <h4 class="font-orbitron font-bold text-sm tracking-[0.5em] text-gray-500 mb-8">ESTABLISH_COMM_LINK</h4>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://twitter.com/shahriyarsojib_" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-white hover:text-black"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://facebook.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#1877F2] hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com/in/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#0A66C2] hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#E4405F] hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-white hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="https://youtube.com/@shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#FF0000] hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="https://buymeacoffee.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center text-[#FFDD00] border-[#FFDD00]/30 hover:bg-[#FFDD00] hover:text-black"><i class="fas fa-mug-hot"></i></a>
             </div>
-        </section>
+        </div>
 
-        <!-- Tech Stack Section -->
-        <section id="stack" class="py-20 px-4 max-w-6xl mx-auto text-center relative z-10">
-            <h2 class="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-glow-pink">
-                <span class="text-neonPink">02.</span> NEURAL_NETWORK
-            </h2>
-            <div class="glass-card p-10 rounded-lg inline-block">
-                <p class="font-space text-gray-300 mb-8 italic">"The languages and tools that power my digital constructs."</p>
-                <img src="[https://skillicons.dev/icons?i=js,ts,python,rust,react,nextjs,nodejs,docker,kubernetes,mongodb,postgres,redis,linux,githubactions&theme=dark&perline=7](https://skillicons.dev/icons?i=js,ts,python,rust,react,nextjs,nodejs,docker,kubernetes,mongodb,postgres,redis,linux,githubactions&theme=dark&perline=7)" alt="Shahriyar's Tech Stack including React, Node.js, Python, Rust, and Docker" class="mx-auto hover:scale-105 transition-transform duration-500 drop-shadow-[0_0_15px_rgba(127,90,240,0.5)]">
-            </div>
-        </section>
-
-        <!-- Workspace Section -->
-        <section id="workspace" class="py-20 px-4 max-w-4xl mx-auto relative z-10">
-            <h2 class="font-orbitron text-3xl md:text-4xl font-bold mb-12 text-center text-glow-purple">
-                <span class="text-neonPurple">03.</span> SYSTEM_PREF
-            </h2>
-            <div class="flex flex-wrap justify-center gap-4 font-space font-semibold tracking-wide">
-                <span class="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg"><i class="fas fa-microchip mr-2" aria-hidden="true"></i>Kali Linux</span>
-                <span class="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg"><i class="fas fa-microchip mr-2" aria-hidden="true"></i>Arch Linux</span>
-                <span class="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg"><i class="fas fa-microchip mr-2" aria-hidden="true"></i>VS Code</span>
-                <span class="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg"><i class="fas fa-microchip mr-2" aria-hidden="true"></i>ZSH & Bash</span>
-                <span class="px-6 py-3 glass-card rounded-full text-neonPink border-neonPink/40 hover:bg-neonPink hover:text-darkBg"><i class="fas fa-microchip mr-2" aria-hidden="true"></i>Android Studio</span>
-            </div>
-        </section>
-
-        <!-- Quote/Philosophy Section -->
-        <section aria-label="Philosophy" class="py-24 px-4 relative z-10">
-            <div class="max-w-4xl mx-auto glass-card p-12 rounded-lg border-l-4 border-l-neonPink relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-8 opacity-10" aria-hidden="true">
-                    <i class="fas fa-quote-right text-9xl text-neonPink"></i>
-                </div>
-                <blockquote class="font-space text-2xl md:text-3xl text-gray-200 leading-relaxed relative z-10 italic">
-                    "The terminal is my canvas, code is my brush, and the internet is the gallery where my futuristic visions come to life."
-                </blockquote>
-                <p class="mt-6 font-orbitron text-neonPurple font-bold tracking-widest uppercase">
-                    - Shahriyar Sojib Hasan
-                </p>
-            </div>
-        </section>
     </main>
 
-    <!-- Footer / Social Links -->
-    <footer id="footer" class="pt-20 pb-10 px-4 border-t border-neonPurple/30 bg-[#080b0f] relative z-10">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="font-orbitron text-2xl mb-8 text-glow-pink">ESTABLISH_COMM_LINK</h2>
-            
-            <nav aria-label="Social Media Links" class="flex flex-wrap justify-center gap-6 mb-12">
-                <a href="[https://github.com/shahriyarsojibhasan](https://github.com/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="[https://twitter.com/shahriyarsojib](https://twitter.com/shahriyarsojib)_" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="[https://linkedin.com/in/shahriyarsojibhasan](https://linkedin.com/in/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a href="[https://instagram.com/shahriyarsojibhasan](https://instagram.com/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="[https://facebook.com/shahriyarsojibhasan](https://facebook.com/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a href="[https://buymeacoffee.com/shahriyarsojibhasan](https://buymeacoffee.com/shahriyarsojibhasan)" target="_blank" rel="noopener noreferrer" aria-label="Buy Me A Coffee" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-xl text-gray-300 hover:text-neonPink hover:border-neonPink hover:shadow-neon-pink transition-all duration-300 hover:scale-110">
-                    <i class="fas fa-mug-hot" aria-hidden="true"></i>
-                </a>
-            </nav>
-
-            <p class="font-space text-gray-500 text-sm tracking-widest">
-                &copy; <script>document.write(new Date().getFullYear())</script> SHAHRIYAR SOJIB HASAN. ALL RIGHTS RESERVED. <br>
-                <span class="text-neonPurple text-xs mt-2 block">SYSTEM VERSION 2.0.26 // CYBERPUNK EDITION</span>
-            </p>
-        </div>
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="font-orbitron text-xs text-white/20 mb-2 italic tracking-tighter">SHAHRIYAR.SYS // DATA ARCHITECT</p>
+        <p class="text-[10px] text-gray-600 font-mono tracking-[0.4em]">
+            &copy; 2020 - <span id="year"></span> SHAHRIYAR SOJIB HASAN. ALL RIGHTS RESERVED.
+        </p>
     </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shahriyar Sojib Hasan",
+      "url": "https://shahriyarsojibhasan.github.io/",
+      "jobTitle": "Full Stack Developer & Ethical Hacker",
+      "sameAs": [
+        "https://twitter.com/shahriyarsojib_",
+        "https://github.com/shahriyarsojibhasan",
+        "https://facebook.com/shahriyarsojibhasan",
+        "https://www.binance.com/en/feed/profile/shahriyarsojibhasan-"
+      ]
+    }
+    </script>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const canvas = document.getElementById('nexus-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const mouse = { x: null, y: null, radius: 180 };
+
+        window.addEventListener('mousemove', (e) => { mouse.x = e.x; mouse.y = e.y; });
+        window.addEventListener('touchmove', (e) => { mouse.x = e.touches[0].clientX; mouse.y = e.touches[0].clientY; });
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5 + 0.5;
+                this.density = (Math.random() * 25) + 1;
+                this.vx = (Math.random() - 0.5) * 1.2;
+                this.vy = (Math.random() - 0.5) * 1.2;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(0, 242, 255, 0.85)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < mouse.radius) {
+                    const forceDirectionX = dx / distance;
+                    const forceDirectionY = dy / distance;
+                    const force = (mouse.radius - distance) / mouse.radius;
+                    this.x -= forceDirectionX * force * this.density;
+                    this.y -= forceDirectionY * force * this.density;
+                }
+            }
+        }
+
+        function init() {
+            particles = [];
+            let divisor = window.innerWidth < 768 ? 6000 : 3500; // Super Dense
+            const numberOfParticles = (canvas.width * canvas.height) / divisor; 
+            for (let i = 0; i < numberOfParticles; i++) { particles.push(new Particle()); }
+        }
+
+        function connect() {
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    let dx = particles[a].x - particles[b].x;
+                    let dy = particles[a].y - particles[b].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < 130) {
+                        ctx.strokeStyle = `rgba(0, 242, 255, ${0.3 * (1 - distance/130)})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            connect();
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+        animate();
+    </script>
 </body>
 </html>
