@@ -1,306 +1,324 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="base:app_id" content="69fdc3b9de35bbe9eac4acdd">
-    <title>Shahriyar Sojib Hasan | Full-Stack Developer & Ethical Hacker</title>
-    <meta name="description" content="Portfolio of Shahriyar Sojib Hasan. Expert in Full Stack Development, Crypto Analytics, Blockchain Research, Ethical Hacking, and AI Automation.">
-    <meta name="keywords" content="Shahriyar Sojib Hasan, Shahriyar SYS, Full Stack Developer Bangladesh, Ethical Hacker Bangladesh, Crypto Analytics, OSINT, Infinity Course, AI Builder">
-    <meta name="author" content="Shahriyar Sojib Hasan">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahriyar Sojib Hasan (শাহরিয়ার সজিব হাসান) — Software Developer, Android Mobile Apps &amp; Systems</title>
+  <meta name="description" content="Personal website and portfolio of Shahriyar Sojib Hasan — Software developer from Bogura, Bangladesh, building web applications, Android apps, and hands-on tech projects. Coding since 2020." />
+  <meta name="keywords" content="Shahriyar Sojib Hasan, Shahariyar Sojib Hasan, Shahriar Sojib, Sojib Hasan, Shahriyar Sojib, shahriyarsojibhasan, শাহরিয়ার সজিব হাসান, শাহরিয়ার সজীব হাসান, শাহরিয়ার সজিব, সজিব হাসান, Software Developer, Android Apps Developer, Full-Stack Developer, Mobile Apps, Python, Kotlin, React, TypeScript, Linux Cybersecurity, Ethical Hacking Basics, MikroTik Networking, Hardware Diagnostics, Phone Repair, Laptop Repair, Electrical Wiring, Google Play Books Author, RESULTSNIPER-BD, DUOVISTA-PDF-VIEWER, Bogura Bangladesh Developer, shahriyarsojibhasan.top" />
+  <meta name="author" content="Shahriyar Sojib Hasan" />
+  
+  <!-- Search Engine Directives -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="canonical" href="https://shahriyarsojibhasan.top/" />
+  <link rel="alternate" hreflang="x-default" href="https://shahriyarsojibhasan.top/" />
+  <link rel="alternate" hreflang="en" href="https://shahriyarsojibhasan.top/" />
+  <link rel="alternate" hreflang="bn" href="https://shahriyarsojibhasan.top/" />
+  <link rel="alternate" type="text/plain" href="https://shahriyarsojibhasan.top/llms.txt" title="LLM Knowledge Manifest" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Shahriyar Sojib Hasan | Digital Architect">
-    <meta property="og:description" content="Turning volatile data into alpha. Explore my coding, hacking, and blockchain research.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/shahriyarsojibhasan/shahriyarsojibhasan.github.io/main/shahriyar.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@shahriyarsojib_">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Shahriyar Sojib Hasan" />
+  <meta property="og:title" content="Shahriyar Sojib Hasan — Software Developer, Mobile Apps &amp; Systems" />
+  <meta property="og:description" content="Personal website and portfolio of Shahriyar Sojib Hasan. Software developer working on web apps, Android projects, Linux, and electronics." />
+  <meta property="og:url" content="https://shahriyarsojibhasan.top/" />
+  <meta property="og:image" content="https://shahriyarsojibhasan.top/assets/shahriyar-avatar-dotted.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Shahriyar Sojib Hasan — Official 3D Particle Avatar" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        void: '#000000',
-                        cyanNeon: '#00f2ff',
-                        magentaNeon: '#ff00e5',
-                        goldAlpha: '#f3ba2f',
-                    },
-                    fontFamily: {
-                        orbitron: ['Orbitron', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@shahriyarsojib_" />
+  <meta name="twitter:creator" content="@shahriyarsojib_" />
+  <meta name="twitter:title" content="Shahriyar Sojib Hasan — Software Developer, Mobile Apps &amp; Systems" />
+  <meta name="twitter:description" content="Personal website and portfolio of Shahriyar Sojib Hasan. Software developer working on web apps, Android projects, Linux, and electronics." />
+  <meta name="twitter:image" content="https://shahriyarsojibhasan.top/assets/shahriyar-avatar-dotted.png" />
 
-    <style>
-        body { background-color: #000; color: #fff; overflow-x: hidden; margin: 0; }
-        
-        /* DENSE MESH BACKGROUND (ALWAYS VISIBLE) */
-        #nexus-canvas {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1; pointer-events: none; opacity: 0.9;
-        }
+  <!-- Multi-Resolution Favicon Suite (Original Restored with Cache Buster) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="/site.webmanifest?v=2" />
+  <meta name="theme-color" content="#070608" />
 
-        /* ULTRA TRANSPARENT BENTO CARDS */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03); /* Almost invisible bg */
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 1.25rem;
-            transition: all 0.4s ease;
-        }
-        .glass-card:hover {
-            border-color: rgba(0, 242, 255, 0.5);
-            background: rgba(255, 255, 255, 0.06);
-            transform: scale(1.01);
-            box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
-        }
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
 
-        .glow-cyan { text-shadow: 0 0 10px #00f2ff; }
-        .glow-gold { text-shadow: 0 0 10px #f3ba2f; }
-        
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
-    </style>
-</head>
-<body class="font-mono antialiased selection:bg-cyanNeon selection:text-black">
-
-    <canvas id="nexus-canvas"></canvas>
-
-    <nav class="fixed top-0 w-full z-50 p-4">
-        <div class="max-w-6xl mx-auto glass-card px-6 py-3 flex justify-between items-center">
-            <span class="font-orbitron font-black text-cyanNeon glow-cyan text-sm tracking-widest">SHAHRIYAR.SYS</span>
-            <div class="hidden md:flex gap-6 text-[9px] uppercase font-bold tracking-[0.2em]">
-                <a href="#identity" class="hover:text-cyanNeon">Protocol</a>
-                <a href="#arsenal" class="hover:text-cyanNeon">Arsenal</a>
-                <a href="#tools" class="hover:text-magentaNeon">Tools</a>
-                <a href="#crypto" class="hover:text-goldAlpha">Alpha</a>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="text-[8px] text-green-500 animate-pulse font-bold uppercase">Mainframe Active</span>
-            </div>
-        </div>
-    </nav>
-
-    <main class="w-full max-w-6xl mx-auto px-4 pt-24 pb-12 grid grid-cols-1 md:grid-cols-6 gap-4">
-        
-        <div class="glass-card p-8 md:col-span-4 flex flex-col justify-center relative overflow-hidden">
-            <p class="text-cyanNeon text-[10px] uppercase tracking-[0.4em] mb-2 font-bold italic">Identity Matrix // Active</p>
-            <h1 class="font-orbitron text-4xl md:text-7xl font-black mb-4 tracking-tighter">
-                SHAHRIYAR <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyanNeon via-white to-magentaNeon">SOJIB HASAN</span>
-            </h1>
-            <p class="text-gray-300 text-xs md:text-sm max-w-xl leading-relaxed mb-6 font-light">
-                Full Stack Developer ⚡ Crypto Analytics & Blockchain Research ⚡ Ethical Hacker ⚡ OSINT Specialist ⚡ AI Builder. Turning raw data into alpha since 2020.
-            </p>
-            <div class="flex gap-4">
-                <div class="text-center px-4 py-2 border border-white/10 rounded-lg">
-                    <span class="text-cyanNeon font-bold block text-lg">6+</span>
-                    <span class="text-[8px] text-gray-500 uppercase">Disciplines</span>
-                </div>
-                <div class="text-center px-4 py-2 border border-white/10 rounded-lg">
-                    <span class="text-magentaNeon font-bold block text-lg">∞</span>
-                    <span class="text-[8px] text-gray-500 uppercase">Ambition</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass-card p-6 md:col-span-2 font-mono text-[10px] space-y-2 text-cyanNeon flex flex-col justify-center">
-            <p>> initializing_sys.config...</p>
-            <p class="text-white">[+] Status: Online</p>
-            <p class="text-white">[+] Location: Bangladesh</p>
-            <p class="text-white">[+] OS: Linux (Kali/Arch)</p>
-            <p class="text-magentaNeon">> loading_arsenal...</p>
-            <p class="text-gray-500 italic">React, Node, Capacitor, Python, Rust, AI_Logic</p>
-            <p class="animate-pulse">> _</p>
-        </div>
-
-        <a id="tools" href="https://shahriyarsojibhasan.github.io/shahriyartools/" target="_blank" class="glass-card md:col-span-3 p-8 border-magentaNeon/20 hover:border-magentaNeon group flex items-center justify-between">
-            <div>
-                <h3 class="font-orbitron font-bold text-2xl text-white group-hover:text-magentaNeon transition">TOOLS_VAULT</h3>
-                <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">shahriyartools</p>
-            </div>
-            <i class="fas fa-external-link-alt text-2xl text-magentaNeon group-hover:rotate-45 transition duration-500"></i>
-        </a>
-
-        <div class="glass-card md:col-span-3 p-8 flex flex-col justify-center text-center">
-            <p class="text-[9px] text-gray-500 uppercase tracking-widest mb-4">Neural Network Arsenal</p>
-            <img src="https://skillicons.dev/icons?i=js,ts,python,rust,react,nextjs,nodejs,docker,mongodb,postgres,linux,github&theme=dark&perline=6" alt="Tech Stack" class="mx-auto grayscale hover:grayscale-0 transition duration-500">
-        </div>
-
-        <div id="crypto" class="glass-card md:col-span-6 p-8 border-goldAlpha/20">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-                <div>
-                    <h3 class="font-orbitron font-bold text-2xl text-goldAlpha glow-gold">ALPHA_NETWORK</h3>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-[0.3em]">Blockchain Research & Exchange Gateways</p>
-                </div>
-                <a href="https://www.binance.com/en/feed/profile/shahriyarsojibhasan-" target="_blank" class="px-6 py-2 bg-goldAlpha/10 border border-goldAlpha text-goldAlpha font-bold rounded-full text-[10px] hover:bg-goldAlpha hover:text-black transition">
-                    BINANCE SQUARE: @shahriyarsojibhasan-
-                </a>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
-                    <span class="text-xs font-bold text-white block">BINANCE</span>
-                    <span class="text-[8px] text-goldAlpha uppercase font-bold">Verified Node</span>
-                </div>
-                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
-                    <span class="text-xs font-bold text-white block">GATE.IO</span>
-                    <span class="text-[8px] text-cyanNeon uppercase font-bold">Trading Active</span>
-                </div>
-                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
-                    <span class="text-xs font-bold text-white block">BYBIT</span>
-                    <span class="text-[8px] text-magentaNeon uppercase font-bold">Link Stable</span>
-                </div>
-                <div class="p-4 border border-white/5 rounded-xl text-center bg-white/5">
-                    <span class="text-xs font-bold text-white block">BITGET</span>
-                    <span class="text-[8px] text-white uppercase font-bold">Researching</span>
-                </div>
-            </div>
-        </div>
-
-        <div id="arsenal" class="glass-card md:col-span-3 p-8">
-            <i class="fas fa-graduation-cap text-2xl text-cyanNeon mb-4"></i>
-            <h4 class="font-orbitron font-bold text-xl mb-2">Infinity Course ™</h4>
-            <p class="text-xs text-gray-400 leading-relaxed">Full-scale EdTech ecosystem for HSC students. Features M3U8 encryption, live streaming, and Capacitor mobile integration. Built with React & Firebase.</p>
-        </div>
-        <div class="glass-card md:col-span-3 p-8">
-            <i class="fab fa-x-twitter text-2xl text-magentaNeon mb-4"></i>
-            <h4 class="font-orbitron font-bold text-xl mb-2">Twitter AI Engine</h4>
-            <p class="text-xs text-gray-400 leading-relaxed">Sophisticated automation assistant with human-like delay logic, auto-reply, and engagement boosting via AI-driven OSINT analytics.</p>
-        </div>
-
-        <div class="glass-card md:col-span-6 p-8 flex flex-col items-center">
-            <h4 class="font-orbitron font-bold text-sm tracking-[0.5em] text-gray-500 mb-8">ESTABLISH_COMM_LINK</h4>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://twitter.com/shahriyarsojib_" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-white hover:text-black"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://facebook.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#1877F2] hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://linkedin.com/in/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#0A66C2] hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://instagram.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#E4405F] hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-white hover:text-black"><i class="fab fa-github"></i></a>
-                <a href="https://youtube.com/@shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center hover:bg-[#FF0000] hover:text-white"><i class="fab fa-youtube"></i></a>
-                <a href="https://buymeacoffee.com/shahriyarsojibhasan" target="_blank" class="w-12 h-12 glass-card flex items-center justify-center text-[#FFDD00] border-[#FFDD00]/30 hover:bg-[#FFDD00] hover:text-black"><i class="fas fa-mug-hot"></i></a>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="py-12 border-t border-white/5 text-center">
-        <p class="font-orbitron text-xs text-white/20 mb-2 italic tracking-tighter">SHAHRIYAR.SYS // DATA ARCHITECT</p>
-        <p class="text-[10px] text-gray-600 font-mono tracking-[0.4em]">
-            &copy; 2020 - <span id="year"></span> SHAHRIYAR SOJIB HASAN. ALL RIGHTS RESERVED.
-        </p>
-    </footer>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Shahriyar Sojib Hasan",
-      "url": "https://shahriyarsojibhasan.github.io/",
-      "jobTitle": "Full Stack Developer & Ethical Hacker",
-      "sameAs": [
-        "https://twitter.com/shahriyarsojib_",
-        "https://github.com/shahriyarsojibhasan",
-        "https://facebook.com/shahriyarsojibhasan",
-        "https://www.binance.com/en/feed/profile/shahriyarsojibhasan-"
-      ]
+  <!-- Schema.org JSON-LD Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://shahriyarsojibhasan.top/#person",
+        "name": "Shahriyar Sojib Hasan",
+        "givenName": "Shahriyar",
+        "additionalName": "Sojib",
+        "familyName": "Hasan",
+        "alternateName": [
+          "Shahriyar Sojib Hasan",
+          "Shahariyar Sojib Hasan",
+          "Shahriar Sojib Hasan",
+          "Shahriyar Sojib",
+          "Sojib Hasan",
+          "শাহরিয়ার সজিব হাসান",
+          "শাহরিয়ার সজীব হাসান",
+          "শাহরিয়ার",
+          "সজিব হাসান"
+        ],
+        "disambiguatingDescription": "Author and Full-Stack Developer from Bogura, Bangladesh. Published author of contemporary poetry and speculative fiction on Google Play Books, building web applications and Android mobile apps since 2020.",
+        "url": "https://shahriyarsojibhasan.top/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://shahriyarsojibhasan.top/#avatar",
+          "name": "Shahriyar Sojib Hasan Official 3D Particle Avatar",
+          "url": "https://shahriyarsojibhasan.top/assets/shahriyar-avatar-dotted.png",
+          "contentUrl": "https://shahriyarsojibhasan.top/assets/shahriyar-avatar-dotted.png",
+          "caption": "Official avatar, developer profile photo, and 3D red particle mask of Shahriyar Sojib Hasan",
+          "creditText": "Shahriyar Sojib Hasan",
+          "creator": {
+            "@type": "Person",
+            "name": "Shahriyar Sojib Hasan",
+            "url": "https://shahriyarsojibhasan.top/"
+          },
+          "copyrightNotice": "© 2026 Shahriyar Sojib Hasan. All rights reserved.",
+          "license": "https://shahriyarsojibhasan.top/",
+          "acquireLicensePage": "https://shahriyarsojibhasan.top/contact"
+        },
+        "email": "hello@shahriyarsojibhasan.top",
+        "jobTitle": [
+          "Author",
+          "Full-Stack Developer",
+          "Software Developer"
+        ],
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Author",
+            "description": "Author of contemporary poetry, fiction, and books published on Google Play Books"
+          },
+          {
+            "@type": "Occupation",
+            "name": "Full-Stack Developer",
+            "description": "Engineering high-performance web applications, Android mobile apps, and edge systems"
+          }
+        ],
+        "nationality": {
+          "@type": "Country",
+          "name": "Bangladesh"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bogura",
+          "addressRegion": "Rajshahi Division",
+          "addressCountry": "Bangladesh"
+        },
+        "knowsAbout": [
+          "Software Development",
+          "Web Application Engineering",
+          "Android Mobile Apps",
+          "Creative Writing & Poetry",
+          "Google Play Books Publishing",
+          "Kotlin",
+          "React",
+          "TypeScript",
+          "Python",
+          "Linux Administration",
+          "Cybersecurity Basics",
+          "MikroTik RouterOS",
+          "Hardware Diagnostics"
+        ],
+        "sameAs": [
+          "https://github.com/shahriyarsojibhasan",
+          "https://linkedin.com/in/shahriyarsojibhasan",
+          "https://x.com/shahriyarsojib_",
+          "https://youtube.com/@shahriyarsojibhasan",
+          "https://facebook.com/shahriyarsojibhasan",
+          "https://instagram.com/shahriyarsojibhasan",
+          "https://t.me/shahriyarsojibhasan",
+          "https://play.google.com/store/books/author?id=Shahriyar+Sojib+Hasan"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://shahriyarsojibhasan.top/#website",
+        "url": "https://shahriyarsojibhasan.top/",
+        "name": "Shahriyar Sojib Hasan — Official Portfolio",
+        "publisher": { "@id": "https://shahriyarsojibhasan.top/#person" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://shahriyarsojibhasan.top/#hero-banner",
+        "name": "Shahriyar Sojib Hasan 3D Hero Banner",
+        "url": "https://shahriyarsojibhasan.top/assets/hero-banner.png",
+        "contentUrl": "https://shahriyarsojibhasan.top/assets/hero-banner.png",
+        "caption": "Widescreen 3D developer hero banner with monumental typography for Shahriyar Sojib Hasan",
+        "creditText": "Shahriyar Sojib Hasan",
+        "creator": {
+          "@type": "Person",
+          "name": "Shahriyar Sojib Hasan",
+          "url": "https://shahriyarsojibhasan.top/"
+        },
+        "copyrightNotice": "© 2026 Shahriyar Sojib Hasan. All rights reserved.",
+        "license": "https://shahriyarsojibhasan.top/",
+        "acquireLicensePage": "https://shahriyarsojibhasan.top/contact"
+      }
+    ]
+  }
+  </script>
+  <!-- Force page load / refresh to always start at top hero -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
     }
-    </script>
+    window.scrollTo(0, 0);
+  </script>
+  <!-- SPA Redirect Receiver for GitHub Pages -->
+  <script>
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&');
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location));
+  </script>
+  <script type="module" crossorigin src="/assets/index-DuUWiMUm.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-vendor-DPp-XUHt.js">
+  <link rel="modulepreload" crossorigin href="/assets/icons-vendor-o8bgWJP9.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-D1CwIzcZ.css">
+</head>
+<body>
+  <div id="root"></div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- Background Particle Network Canvas -->
+  <canvas id="meshCanvas" aria-hidden="true"></canvas>
 
-        const canvas = document.getElementById('nexus-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        const mouse = { x: null, y: null, radius: 180 };
 
-        window.addEventListener('mousemove', (e) => { mouse.x = e.x; mouse.y = e.y; });
-        window.addEventListener('touchmove', (e) => { mouse.x = e.touches[0].clientX; mouse.y = e.touches[0].clientY; });
+  <!-- Ambient background mesh logic -->
+  <script>
+    (function () {
+      var canvas = document.getElementById('meshCanvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      if (!ctx) return;
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        canvas.style.display = 'none';
+        return;
+      }
 
-        function resize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init();
+      var nodes = [];
+      var pointer = { x: -999, y: -999 };
+      var isRunning = !document.hidden;
+      var lastFrame = 0;
+
+      function resize() {
+        var isMobile = window.innerWidth < 768;
+        if (isMobile) {
+          canvas.style.display = 'none';
+          nodes = [];
+          return;
         }
+        canvas.style.display = 'block';
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var count = Math.min(32, Math.floor((canvas.width * canvas.height) / 36000));
+        nodes = [];
+        for (var i = 0; i < count; i++) {
+          nodes.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.3,
+            vy: (Math.random() - 0.5) * 0.3,
+            r: Math.random() * 1.2 + 0.6
+          });
+        }
+      }
 
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 1.5 + 0.5;
-                this.density = (Math.random() * 25) + 1;
-                this.vx = (Math.random() - 0.5) * 1.2;
-                this.vy = (Math.random() - 0.5) * 1.2;
+      document.addEventListener('visibilitychange', function () {
+        isRunning = !document.hidden;
+      });
+
+      window.addEventListener('mousemove', function (e) {
+        pointer.x = e.clientX;
+        pointer.y = e.clientY;
+      }, { passive: true });
+
+      window.addEventListener('resize', resize, { passive: true });
+      resize();
+
+      function tick(now) {
+        requestAnimationFrame(tick);
+        if (!isRunning || nodes.length === 0) return;
+        // Throttle 2D particle canvas to ~30fps to guarantee butter-smooth 60fps for WebGL & scrolling
+        if (now - lastFrame < 32) return;
+        lastFrame = now;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var dotColor = 'rgba(229, 9, 20, 0.45)';
+        var lineBase = '163, 9, 14';
+
+        for (var i = 0; i < nodes.length; i++) {
+          var p = nodes[i];
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+          ctx.fillStyle = dotColor;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fill();
+
+          for (var j = i + 1; j < nodes.length; j++) {
+            var q = nodes[j];
+            var dx = p.x - q.x;
+            var dy = p.y - q.y;
+            if (Math.abs(dx) > 115 || Math.abs(dy) > 115) continue;
+            var distSq = dx * dx + dy * dy;
+            if (distSq < 13225) { // 115 * 115
+              var dist = Math.sqrt(distSq);
+              ctx.strokeStyle = 'rgba(' + lineBase + ', ' + (0.16 * (1 - dist / 115)).toFixed(3) + ')';
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.stroke();
             }
-            draw() {
-                ctx.fillStyle = 'rgba(0, 242, 255, 0.85)';
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
+          }
+
+          var mdx = p.x - pointer.x;
+          var mdy = p.y - pointer.y;
+          if (Math.abs(mdx) < 130 && Math.abs(mdy) < 130) {
+            var mdistSq = mdx * mdx + mdy * mdy;
+            if (mdistSq < 16900) { // 130 * 130
+              var mdist = Math.sqrt(mdistSq);
+              ctx.strokeStyle = 'rgba(229, 9, 20, ' + (0.28 * (1 - mdist / 130)).toFixed(3) + ')';
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(pointer.x, pointer.y);
+              ctx.stroke();
             }
-            update() {
-                this.x += this.vx; this.y += this.vy;
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < mouse.radius) {
-                    const forceDirectionX = dx / distance;
-                    const forceDirectionY = dy / distance;
-                    const force = (mouse.radius - distance) / mouse.radius;
-                    this.x -= forceDirectionX * force * this.density;
-                    this.y -= forceDirectionY * force * this.density;
-                }
-            }
+          }
         }
-
-        function init() {
-            particles = [];
-            let divisor = window.innerWidth < 768 ? 6000 : 3500; // Super Dense
-            const numberOfParticles = (canvas.width * canvas.height) / divisor; 
-            for (let i = 0; i < numberOfParticles; i++) { particles.push(new Particle()); }
-        }
-
-        function connect() {
-            for (let a = 0; a < particles.length; a++) {
-                for (let b = a; b < particles.length; b++) {
-                    let dx = particles[a].x - particles[b].x;
-                    let dy = particles[a].y - particles[b].y;
-                    let distance = Math.sqrt(dx * dx + dy * dy);
-                    if (distance < 130) {
-                        ctx.strokeStyle = `rgba(0, 242, 255, ${0.3 * (1 - distance/130)})`;
-                        ctx.lineWidth = 1;
-                        ctx.beginPath();
-                        ctx.moveTo(particles[a].x, particles[a].y);
-                        ctx.lineTo(particles[b].x, particles[b].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            connect();
-            requestAnimationFrame(animate);
-        }
-
-        window.addEventListener('resize', resize);
-        resize();
-        animate();
-    </script>
+      }
+      requestAnimationFrame(tick);
+    })();
+  </script>
 </body>
 </html>

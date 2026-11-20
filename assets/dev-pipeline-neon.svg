@@ -1,0 +1,65 @@
+<svg width="1200" height="176" viewBox="0 0 1200 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowBg" x1="0" y1="0" x2="1200" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070608"/>
+      <stop offset="50%" stop-color="#120d10"/>
+      <stop offset="100%" stop-color="#0c080b"/>
+    </linearGradient>
+    <linearGradient id="flowBorder" x1="0" y1="0" x2="1200" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#680509" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#e50914" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff2a38" stop-opacity="0.8"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Cascadia Code', monospace; }
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 24; }
+        to { stroke-dashoffset: 0; }
+      }
+      .pulse-pipe { stroke-dasharray: 6 6; animation: dashFlow 1.1s linear infinite; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="1196" height="172" rx="18" fill="url(#flowBg)" stroke="url(#flowBorder)" stroke-width="1.6"/>
+  <text x="34" y="32" class="mono" font-size="11.5" font-weight="700" letter-spacing="1.5" fill="#ff2a38">// SYSTEM ARCHITECTURE &amp; LIFECYCLE PIPELINE</text>
+  <text x="1166" y="32" text-anchor="end" class="mono" font-size="11" fill="#a88d94">IDEA → DESIGN → DEVELOP → HARDEN → DEPLOY → SCALE</text>
+
+  <!-- Animated Crimson Connectors -->
+  <line class="pulse-pipe" x1="192" y1="98" x2="224" y2="98" stroke="#e50914" stroke-width="2.2"/>
+  <line class="pulse-pipe" x1="384" y1="98" x2="416" y2="98" stroke="#ff2a38" stroke-width="2.2"/>
+  <line class="pulse-pipe" x1="576" y1="98" x2="608" y2="98" stroke="#e50914" stroke-width="2.2"/>
+  <line class="pulse-pipe" x1="768" y1="98" x2="800" y2="98" stroke="#ff2a38" stroke-width="2.2"/>
+  <line class="pulse-pipe" x1="960" y1="98" x2="992" y2="98" stroke="#e50914" stroke-width="2.2"/>
+
+  <!-- 6 Stage Nodes: width 160, gap 32: x = 32, 224, 416, 608, 800, 992 -->
+  <rect x="32" y="52" width="160" height="92" rx="14" fill="#110c0f" stroke="#e50914" stroke-opacity="0.45" stroke-width="1.3"/>
+  <text x="112" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 01 // CONCEPT</text>
+  <text x="112" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">IDEA</text>
+  <text x="112" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Identify friction</text>
+
+  <rect x="224" y="52" width="160" height="92" rx="14" fill="#140d12" stroke="#ff2a38" stroke-opacity="0.55" stroke-width="1.3"/>
+  <text x="304" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 02 // INTERFACE</text>
+  <text x="304" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">DESIGN</text>
+  <text x="304" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Clean visual UI/UX</text>
+
+  <rect x="416" y="52" width="160" height="92" rx="14" fill="#180e14" stroke="#ff334b" stroke-opacity="0.75" stroke-width="1.4"/>
+  <text x="496" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 03 // RUNTIME</text>
+  <text x="496" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">DEVELOP</text>
+  <text x="496" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Fast async code</text>
+
+  <rect x="608" y="52" width="160" height="92" rx="14" fill="#140d12" stroke="#e50914" stroke-opacity="0.55" stroke-width="1.3"/>
+  <text x="688" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 04 // SECURITY</text>
+  <text x="688" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">HARDENING</text>
+  <text x="688" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Linux &amp; Security</text>
+
+  <rect x="800" y="52" width="160" height="92" rx="14" fill="#110c0f" stroke="#ff2a38" stroke-opacity="0.55" stroke-width="1.3"/>
+  <text x="880" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 05 // EDGE CLOUD</text>
+  <text x="880" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">DEPLOY</text>
+  <text x="880" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Vercel &amp; Workers</text>
+
+  <rect x="992" y="52" width="176" height="92" rx="14" fill="#160e13" stroke="#e50914" stroke-opacity="0.75" stroke-width="1.4"/>
+  <text x="1080" y="78" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ff5263">PHASE 06 // PRODUCTION</text>
+  <text x="1080" y="106" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#ffffff">SCALE</text>
+  <text x="1080" y="128" text-anchor="middle" class="sans" font-size="11.5" fill="#a88d94">Global ecosystem</text>
+</svg>

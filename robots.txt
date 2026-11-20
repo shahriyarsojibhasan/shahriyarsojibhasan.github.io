@@ -1,0 +1,64 @@
+# Robots.txt for https://shahriyarsojibhasan.github.io/
+# Optimized for Web Search Engines, Image Indexers, and AI/LLM Answer Engines
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /favicon*
+Allow: /apple-touch-icon.png
+Allow: /android-chrome*
+Allow: /llms.txt
+
+# OpenAI & ChatGPT Search Crawler
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude Crawler
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI Search Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# Google Search & Gemini Extended
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.webp
+
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Canonical Sitemap & LLM Manifest
+Sitemap: https://shahriyarsojibhasan.top/sitemap.xml
+
+# Global Search Engines & Regional Indexers
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /

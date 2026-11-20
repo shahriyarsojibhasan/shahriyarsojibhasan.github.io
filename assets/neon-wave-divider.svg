@@ -1,0 +1,31 @@
+<svg width="1200" height="20" viewBox="0 0 1200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="laserGradCrimson" x1="0" y1="10" x2="1200" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070608" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#680509" stop-opacity="0.8"/>
+      <stop offset="38%" stop-color="#e50914" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#ff2a38" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#e50914" stop-opacity="0.95"/>
+      <stop offset="82%" stop-color="#680509" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#070608" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="laserGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      @keyframes sweepCrimson {
+        0% { transform: translateX(-220px); opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { transform: translateX(1220px); opacity: 0; }
+      }
+      .pulse-beam-crimson { animation: sweepCrimson 3.2s ease-in-out infinite; }
+    </style>
+  </defs>
+  <rect x="40" y="9" width="1120" height="2" rx="1" fill="url(#laserGradCrimson)"/>
+  <rect class="pulse-beam-crimson" x="0" y="7" width="160" height="6" rx="3" fill="#ff2a38" fill-opacity="0.9" filter="url(#laserGlow)"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg width="380" height="290" viewBox="0 0 380 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBgGrad" x1="0" y1="0" x2="380" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c080b"/>
+      <stop offset="50%" stop-color="#120d10"/>
+      <stop offset="100%" stop-color="#070608"/>
+    </linearGradient>
+    <linearGradient id="cardBorderGrad" x1="0" y1="0" x2="380" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff2a38" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#e50914" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#680509" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="holoGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 125) scale(90 90)">
+      <stop offset="0%" stop-color="#e50914" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ff2a38" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#070608" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Cascadia Code', monospace; }
+      @keyframes spinRings {
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinRingsRev {
+        to { transform: rotate(-360deg); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      @keyframes eqBar1 { 0%, 100% { height: 8px; y: 228px; } 50% { height: 20px; y: 216px; } }
+      @keyframes eqBar2 { 0%, 100% { height: 18px; y: 218px; } 50% { height: 6px; y: 230px; } }
+      @keyframes eqBar3 { 0%, 100% { height: 10px; y: 226px; } 50% { height: 22px; y: 214px; } }
+      @keyframes eqBar4 { 0%, 100% { height: 20px; y: 216px; } 50% { height: 10px; y: 226px; } }
+      .ring-fwd { transform-origin: 190px 125px; animation: spinRings 20s linear infinite; }
+      .ring-rev { transform-origin: 190px 125px; animation: spinRingsRev 14s linear infinite; }
+      .p-dot { animation: pulseDot 1.8s infinite; }
+      .bar-1 { animation: eqBar1 0.9s ease-in-out infinite; }
+      .bar-2 { animation: eqBar2 0.75s ease-in-out infinite; }
+      .bar-3 { animation: eqBar3 1.05s ease-in-out infinite; }
+      .bar-4 { animation: eqBar4 0.85s ease-in-out infinite 0.2s; }
+    </style>
+  </defs>
+
+  <!-- Card Frame -->
+  <rect x="2" y="2" width="376" height="286" rx="16" fill="url(#cardBgGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.3"/>
+
+  <!-- Top Header Pill Row -->
+  <circle class="p-dot" cx="24" cy="24" r="3.5" fill="#ff2a38"/>
+  <text x="36" y="28" class="mono" font-size="10.5" font-weight="700" letter-spacing="1" fill="#fdf2f4">SYS // VERIFIED IDENTITY</text>
+  <rect x="278" y="14" width="86" height="20" rx="10" fill="#e50914" fill-opacity="0.14" stroke="#ff2a38" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="321" y="28" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#ff5263">UTC+6 • BD</text>
+
+  <!-- Central Hologram Radar Display -->
+  <circle cx="190" cy="125" r="75" fill="url(#holoGlow)"/>
+  <circle class="ring-fwd" cx="190" cy="125" r="54" stroke="#e50914" stroke-opacity="0.55" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <circle class="ring-rev" cx="190" cy="125" r="64" stroke="#ff2a38" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Central Monogram Emblem -->
+  <rect x="168" y="103" width="44" height="44" rx="12" fill="#0c080b" stroke="#e50914" stroke-width="1.4"/>
+  <rect x="170" y="105" width="40" height="40" rx="10" fill="#e50914" fill-opacity="0.25"/>
+  <path d="M198 116H188C185.2 116 183 118.2 183 121C183 123.8 185.2 126 188 126H192C194.8 126 197 128.2 197 131C197 133.8 194.8 136 192 136H182" 
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="182" cy="116" r="1.5" fill="#ff2a38"/>
+  <circle cx="198" cy="136" r="1.5" fill="#ff2a38"/>
+
+  <!-- Identity Info -->
+  <text x="190" y="174" text-anchor="middle" class="sans" font-size="13" font-weight="700" fill="#ffffff">SHAHRIYAR SOJIB HASAN</text>
+  <text x="190" y="190" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#a88d94">FULL-STACK &amp; SYSTEMS ENGINEER</text>
+
+  <!-- Mini Animated Equalizer -->
+  <rect class="bar-1" x="146" y="222" width="4.5" height="14" rx="2" fill="#e50914"/>
+  <rect class="bar-2" x="154" y="218" width="4.5" height="18" rx="2" fill="#ff2a38"/>
+  <rect class="bar-3" x="162" y="224" width="4.5" height="12" rx="2" fill="#e50914"/>
+  <rect class="bar-4" x="170" y="216" width="4.5" height="20" rx="2" fill="#ff5263"/>
+  <rect class="bar-2" x="178" y="220" width="4.5" height="16" rx="2" fill="#e50914"/>
+  <rect class="bar-1" x="186" y="224" width="4.5" height="12" rx="2" fill="#ff2a38"/>
+  <rect class="bar-3" x="194" y="218" width="4.5" height="18" rx="2" fill="#e50914"/>
+  <rect class="bar-4" x="202" y="216" width="4.5" height="20" rx="2" fill="#ff5263"/>
+  <rect class="bar-2" x="210" y="222" width="4.5" height="14" rx="2" fill="#e50914"/>
+  <rect class="bar-1" x="218" y="220" width="4.5" height="16" rx="2" fill="#ff2a38"/>
+  <rect class="bar-3" x="226" y="224" width="4.5" height="12" rx="2" fill="#e50914"/>
+
+  <!-- Footer Link Pill -->
+  <rect x="95" y="250" width="190" height="26" rx="13" fill="#e50914" fill-opacity="0.18" stroke="#e50914" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="190" y="267" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#ffffff">shahriyarsojibhasan.top ↗</text>
+</svg>

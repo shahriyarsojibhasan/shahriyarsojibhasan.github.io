@@ -1,0 +1,14 @@
+# CRITICAL PRIVACY GUARD — NEVER COMMIT PLAINTEXT FACE OR VAULT SECRETS TO PUBLIC GITHUB PAGES!
+shahriyar.jpg
+shahriyar_*.jpg
+shahriyar_*.png
+photo-cutout.png
+photo-cutout.*
+portfolio-hero-standalone.html
+screenshots/
+*.enc
+!assets/hero/photo-vault.enc
+.env
+.env.*
+vault/
+vault-blob.js

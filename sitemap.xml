@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://shahriyarsojibhasan.top/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shahriyarsojibhasan.top/assets/shahriyar-avatar-dotted.png</image:loc>
+      <image:title>Shahriyar Sojib Hasan (শাহরিয়ার সজিব হাসান / শাহরিয়ার সজীব হাসান) — Official 3D Avatar</image:title>
+      <image:caption>Official avatar, developer profile photo, and 3D red particle mask of Shahriyar Sojib Hasan.</image:caption>
+      <image:geo_location>Bangladesh</image:geo_location>
+      <image:license>https://shahriyarsojibhasan.top/</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://shahriyarsojibhasan.top/assets/hero-banner.png</image:loc>
+      <image:title>Shahriyar Sojib Hasan — 3D Hero Banner</image:title>
+      <image:caption>Widescreen 3D developer hero banner with monumental typography for Shahriyar Sojib Hasan.</image:caption>
+      <image:geo_location>Bangladesh</image:geo_location>
+      <image:license>https://shahriyarsojibhasan.top/</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/about</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/skills</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/projects</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/journey</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/ebooks</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/contact</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahriyarsojibhasan.top/social</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
