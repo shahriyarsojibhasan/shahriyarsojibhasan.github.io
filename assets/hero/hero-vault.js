@@ -585,13 +585,18 @@
     const minY = dv.getFloat32(16, true), maxY = dv.getFloat32(20, true);
     const minZ = dv.getFloat32(24, true), maxZ = dv.getFloat32(28, true);
 
-    const positions = new Float32Array(count * 3);
-    const normals = new Float32Array(count * 3);
-    const rands = new Float32Array(count);
-    const brights = new Float32Array(count);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const step = isMobile ? 2 : 1;
+    const finalCount = Math.ceil(count / step);
+
+    const positions = new Float32Array(finalCount * 3);
+    const normals = new Float32Array(finalCount * 3);
+    const rands = new Float32Array(finalCount);
+    const brights = new Float32Array(finalCount);
 
     let offset = 32;
     const spanX = maxX - minX, spanY = maxY - minY, spanZ = maxZ - minZ;
+    let outIdx = 0;
 
     for (let i = 0; i < count; i++) {
       const qx = dv.getUint16(offset, true);
@@ -604,7 +609,9 @@
       const qbright = dv.getUint16(offset + 10, true);
       offset += 12;
 
-      const i3 = i * 3;
+      if (i % step !== 0) continue;
+
+      const i3 = outIdx * 3;
       positions[i3] = minX + (qx / 65535.0) * spanX;
       positions[i3 + 1] = minY + (qy / 65535.0) * spanY;
       positions[i3 + 2] = minZ + (qz / 65535.0) * spanZ;
@@ -612,8 +619,9 @@
       const nx = qnx / 127.0, ny = qny / 127.0, nz = qnz / 127.0;
       const nLen = Math.hypot(nx, ny, nz) || 1.0;
       normals[i3] = nx / nLen; normals[i3 + 1] = ny / nLen; normals[i3 + 2] = nz / nLen;
-      rands[i] = qrand / 255.0;
-      brights[i] = qbright / 65535.0;
+      rands[outIdx] = qrand / 255.0;
+      brights[outIdx] = qbright / 65535.0;
+      outIdx++;
     }
 
     const geom = new BufferGeometry();
@@ -1251,7 +1259,8 @@
   function animate(now) {
     if (!isRunning) return;
     animFrameId = requestAnimationFrame(animate);
-    if (!isHeroVisible && appPhase !== 'LOADING' && appPhase !== 'FLY_IN') return;
+    if (appPhase === 'LOADING') return;
+    if (!isHeroVisible && appPhase !== 'FLY_IN') return;
 
     const tSec = now * 0.001;
     sharedUniforms.uTime.value = tSec;
